@@ -1,0 +1,1705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		185FCB0120CE9C5000DD8A07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185FCB0020CE9C5000DD8A07 /* AppDelegate.swift */; };
+		185FCB0320CE9C5000DD8A07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185FCB0220CE9C5000DD8A07 /* ViewController.swift */; };
+		185FCB0820CE9C5100DD8A07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185FCB0720CE9C5100DD8A07 /* Assets.xcassets */; };
+		185FCB0B20CE9C5100DD8A07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185FCB0920CE9C5100DD8A07 /* LaunchScreen.storyboard */; };
+		18F880B520CFD7CD008D2F02 /* OCVCharucoBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F4920CFD7CD008D2F02 /* OCVCharucoBoard.m */; };
+		18F880B620CFD7CD008D2F02 /* OCVBackgroundSubtractorGMG.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F4C20CFD7CD008D2F02 /* OCVBackgroundSubtractorGMG.m */; };
+		18F880B720CFD7CD008D2F02 /* OCVBackgroundSubtractorMOG.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F4E20CFD7CD008D2F02 /* OCVBackgroundSubtractorMOG.m */; };
+		18F880B820CFD7CD008D2F02 /* OCVLDA.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F5220CFD7CD008D2F02 /* OCVLDA.mm */; };
+		18F880B920CFD7CD008D2F02 /* OCVPCA.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F5420CFD7CD008D2F02 /* OCVPCA.mm */; };
+		18F880BA20CFD7CD008D2F02 /* OCVRandomGenerator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F5620CFD7CD008D2F02 /* OCVRandomGenerator.mm */; };
+		18F880BB20CFD7CD008D2F02 /* OCVSVD.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F5820CFD7CD008D2F02 /* OCVSVD.mm */; };
+		18F880BC20CFD7CD008D2F02 /* OCVAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F5B20CFD7CD008D2F02 /* OCVAlgorithm.m */; };
+		18F880BD20CFD7CD008D2F02 /* OCVComplex.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F5E20CFD7CD008D2F02 /* OCVComplex.m */; };
+		18F880BE20CFD7CD008D2F02 /* OCVFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F6120CFD7CD008D2F02 /* OCVFormatter.m */; };
+		18F880BF20CFD7CD008D2F02 /* OCVInputArray.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F6420CFD7CD008D2F02 /* OCVInputArray.mm */; };
+		18F880C020CFD7CD008D2F02 /* OCVInputOutputArray.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F6720CFD7CD008D2F02 /* OCVInputOutputArray.mm */; };
+		18F880C120CFD7CD008D2F02 /* OCVOutputArray.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F6A20CFD7CD008D2F02 /* OCVOutputArray.mm */; };
+		18F880C220CFD7CD008D2F02 /* OCVRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F6E20CFD7CD008D2F02 /* OCVRect.m */; };
+		18F880C320CFD7CD008D2F02 /* OCVScalar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F7020CFD7CD008D2F02 /* OCVScalar.m */; };
+		18F880C420CFD7CD008D2F02 /* OCVVector.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F7420CFD7CD008D2F02 /* OCVVector.m */; };
+		18F880C520CFD7CD008D2F02 /* OCVMat.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F7720CFD7CD008D2F02 /* OCVMat.mm */; };
+		18F880C620CFD7CD008D2F02 /* OCVMatDataAllocator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F7920CFD7CD008D2F02 /* OCVMatDataAllocator.mm */; };
+		18F880C720CFD7CD008D2F02 /* OCVMatExpr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F7B20CFD7CD008D2F02 /* OCVMatExpr.mm */; };
+		18F880C820CFD7CD008D2F02 /* OCVUMat.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F7D20CFD7CD008D2F02 /* OCVUMat.m */; };
+		18F880C920CFD7CD008D2F02 /* OCVMinimumMaximum.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F8120CFD7CD008D2F02 /* OCVMinimumMaximum.m */; };
+		18F880CA20CFD7CD008D2F02 /* OCVOperation+Bitwise.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F8320CFD7CD008D2F02 /* OCVOperation+Bitwise.mm */; };
+		18F880CB20CFD7CD008D2F02 /* OCVOperation+Transform.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F8520CFD7CD008D2F02 /* OCVOperation+Transform.mm */; };
+		18F880CC20CFD7CD008D2F02 /* OCVOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F8720CFD7CD008D2F02 /* OCVOperation.mm */; };
+		18F880CD20CFD7CD008D2F02 /* OCVTermCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F8920CFD7CD008D2F02 /* OCVTermCriteria.m */; };
+		18F880CE20CFD7CD008D2F02 /* OCVFileNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F8C20CFD7CD008D2F02 /* OCVFileNode.mm */; };
+		18F880CF20CFD7CD008D2F02 /* OCVFileStorage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F8E20CFD7CD008D2F02 /* OCVFileStorage.mm */; };
+		18F880D020CFD7CD008D2F02 /* OCVFileStorageFormatDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F9020CFD7CD008D2F02 /* OCVFileStorageFormatDescriptor.m */; };
+		18F880D120CFD7CD008D2F02 /* OCVPoint+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F9A20CFD7CD008D2F02 /* OCVPoint+Private.mm */; };
+		18F880D220CFD7CD008D2F02 /* OCVRect+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F9C20CFD7CD008D2F02 /* OCVRect+Private.mm */; };
+		18F880D320CFD7CD008D2F02 /* OCVScalar+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87F9E20CFD7CD008D2F02 /* OCVScalar+Private.mm */; };
+		18F880D420CFD7CD008D2F02 /* OCVSize+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FA020CFD7CD008D2F02 /* OCVSize+Private.mm */; };
+		18F880D520CFD7CD008D2F02 /* OCVGPUMat.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FA320CFD7CD008D2F02 /* OCVGPUMat.m */; };
+		18F880D620CFD7CD008D2F02 /* OCVBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FA620CFD7CD008D2F02 /* OCVBlob.m */; };
+		18F880D720CFD7CD008D2F02 /* OCVStorageOperationType.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FA920CFD7CD008D2F02 /* OCVStorageOperationType.m */; };
+		18F880D820CFD7CD008D2F02 /* OCVImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FAC20CFD7CD008D2F02 /* OCVImporter.m */; };
+		18F880D920CFD7CD008D2F02 /* OCVNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FAE20CFD7CD008D2F02 /* OCVNet.m */; };
+		18F880DA20CFD7CD008D2F02 /* OCVEigenFaceRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FB120CFD7CD008D2F02 /* OCVEigenFaceRecognizer.m */; };
+		18F880DB20CFD7CD008D2F02 /* OCVFaceRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FB320CFD7CD008D2F02 /* OCVFaceRecognizer.m */; };
+		18F880DC20CFD7CD008D2F02 /* OCVFisherFaceRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FB520CFD7CD008D2F02 /* OCVFisherFaceRecognizer.m */; };
+		18F880DD20CFD7CD008D2F02 /* OCVLBPHFaceRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FB720CFD7CD008D2F02 /* OCVLBPHFaceRecognizer.m */; };
+		18F880DE20CFD7CD008D2F02 /* OCVFeature2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FBA20CFD7CD008D2F02 /* OCVFeature2D.m */; };
+		18F880DF20CFD7CD008D2F02 /* OCVIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FBD20CFD7CD008D2F02 /* OCVIndex.m */; };
+		18F880E020CFD7CD008D2F02 /* OCVFuzzyInvoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FC020CFD7CD008D2F02 /* OCVFuzzyInvoke.m */; };
+		18F880E120CFD7CD008D2F02 /* OCVGeodeticCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FC320CFD7CD008D2F02 /* OCVGeodeticCoordinate.m */; };
+		18F880E220CFD7CD008D2F02 /* OCVContrastLimitedAdaptiveHistogramEqualization.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FC720CFD7CD008D2F02 /* OCVContrastLimitedAdaptiveHistogramEqualization.m */; };
+		18F880E320CFD7CD008D2F02 /* OCVGeneralizedHough.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FC920CFD7CD008D2F02 /* OCVGeneralizedHough.m */; };
+		18F880E420CFD7CD008D2F02 /* OCVGeneralizedHoughBallard.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FCB20CFD7CD008D2F02 /* OCVGeneralizedHoughBallard.m */; };
+		18F880E520CFD7CD008D2F02 /* OCVGeneralizedHoughGuil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FCD20CFD7CD008D2F02 /* OCVGeneralizedHoughGuil.m */; };
+		18F880E620CFD7CD008D2F02 /* OCVImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FCF20CFD7CD008D2F02 /* OCVImage.m */; };
+		18F880E720CFD7CD008D2F02 /* OCVImageOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FD120CFD7CD008D2F02 /* OCVImageOperation.mm */; };
+		18F880E820CFD7CD008D2F02 /* OCVLineSegmentDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FD620CFD7CD008D2F02 /* OCVLineSegmentDetector.m */; };
+		18F880E920CFD7CD008D2F02 /* OCVSubdiv2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FD820CFD7CD008D2F02 /* OCVSubdiv2D.m */; };
+		18F880EA20CFD7CD008D2F02 /* OCVLSDDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FDB20CFD7CD008D2F02 /* OCVLSDDetector.m */; };
+		18F880EB20CFD7CD008D2F02 /* OCVBoostType.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FDF20CFD7CD008D2F02 /* OCVBoostType.m */; };
+		18F880EC20CFD7CD008D2F02 /* OCVVarType.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FE120CFD7CD008D2F02 /* OCVVarType.m */; };
+		18F880ED20CFD7CD008D2F02 /* OCVANNMLP.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FE320CFD7CD008D2F02 /* OCVANNMLP.m */; };
+		18F880EE20CFD7CD008D2F02 /* OCVBoost.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FE520CFD7CD008D2F02 /* OCVBoost.m */; };
+		18F880EF20CFD7CD008D2F02 /* OCVDTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FE720CFD7CD008D2F02 /* OCVDTree.m */; };
+		18F880F020CFD7CD008D2F02 /* OCVEM.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FE920CFD7CD008D2F02 /* OCVEM.m */; };
+		18F880F120CFD7CD008D2F02 /* OCVKNearest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FEB20CFD7CD008D2F02 /* OCVKNearest.m */; };
+		18F880F220CFD7CD008D2F02 /* OCVLogisticRegression.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FED20CFD7CD008D2F02 /* OCVLogisticRegression.m */; };
+		18F880F320CFD7CD008D2F02 /* OCVNormalBayesClassifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FEF20CFD7CD008D2F02 /* OCVNormalBayesClassifier.m */; };
+		18F880F420CFD7CD008D2F02 /* OCVRTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FF120CFD7CD008D2F02 /* OCVRTree.m */; };
+		18F880F520CFD7CD008D2F02 /* OCVStatModelExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FF320CFD7CD008D2F02 /* OCVStatModelExtensions.m */; };
+		18F880F620CFD7CD008D2F02 /* OCVSVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FF520CFD7CD008D2F02 /* OCVSVM.m */; };
+		18F880F720CFD7CD008D2F02 /* OCVTrainData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FF720CFD7CD008D2F02 /* OCVTrainData.m */; };
+		18F880F820CFD7CD008D2F02 /* OCVMCvDTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FFA20CFD7CD008D2F02 /* OCVMCvDTreeNode.m */; };
+		18F880F920CFD7CD008D2F02 /* OCVMCvDTreeSplit.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FFC20CFD7CD008D2F02 /* OCVMCvDTreeSplit.m */; };
+		18F880FA20CFD7CD008D2F02 /* OCVMCvDTreeSplitMOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F87FFE20CFD7CD008D2F02 /* OCVMCvDTreeSplitMOrder.m */; };
+		18F880FB20CFD7CD008D2F02 /* OCVMCvParamGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8800020CFD7CD008D2F02 /* OCVMCvParamGrid.m */; };
+		18F880FC20CFD7CD008D2F02 /* OCVBaseCascadeClassifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8800320CFD7CD008D2F02 /* OCVBaseCascadeClassifier.m */; };
+		18F880FD20CFD7CD008D2F02 /* OCVCascadeClassifier.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F8800520CFD7CD008D2F02 /* OCVCascadeClassifier.mm */; };
+		18F880FE20CFD7CD008D2F02 /* OCVCascadeClassifierOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8800720CFD7CD008D2F02 /* OCVCascadeClassifierOptions.m */; };
+		18F880FF20CFD7CD008D2F02 /* OCVCascadeClassifierResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8800920CFD7CD008D2F02 /* OCVCascadeClassifierResult.m */; };
+		18F8810020CFD7CD008D2F02 /* OCVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8800C20CFD7CD008D2F02 /* OCVDevice.m */; };
+		18F8810120CFD7CD008D2F02 /* OCVImage2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8800E20CFD7CD008D2F02 /* OCVImage2D.m */; };
+		18F8810220CFD7CD008D2F02 /* OCVKernel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8801020CFD7CD008D2F02 /* OCVKernel.m */; };
+		18F8810320CFD7CD008D2F02 /* OCVKernelConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8801220CFD7CD008D2F02 /* OCVKernelConfiguration.m */; };
+		18F8810420CFD7CD008D2F02 /* OCVPlatformInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8801420CFD7CD008D2F02 /* OCVPlatformInfo.m */; };
+		18F8810520CFD7CD008D2F02 /* OCVProgramSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8801620CFD7CD008D2F02 /* OCVProgramSource.m */; };
+		18F8810620CFD7CD008D2F02 /* OCVQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8801820CFD7CD008D2F02 /* OCVQueue.m */; };
+		18F8810720CFD7CD008D2F02 /* OCVOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8801B20CFD7CD008D2F02 /* OCVOrientation.m */; };
+		18F8810820CFD7CD008D2F02 /* OCVPageIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8801D20CFD7CD008D2F02 /* OCVPageIterator.m */; };
+		18F8810920CFD7CD008D2F02 /* OCVTesseract.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8801F20CFD7CD008D2F02 /* OCVTesseract.m */; };
+		18F8810A20CFD7CD008D2F02 /* OCVTesseractResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8802120CFD7CD008D2F02 /* OCVTesseractResult.m */; };
+		18F8810B20CFD7CD008D2F02 /* OCVPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8802420CFD7CD008D2F02 /* OCVPlot.m */; };
+		18F8810C20CFD7CD008D2F02 /* OCVReflectImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8802720CFD7CD008D2F02 /* OCVReflectImage.m */; };
+		18F8810D20CFD7CD008D2F02 /* OCVAffineTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8802A20CFD7CD008D2F02 /* OCVAffineTransformer.m */; };
+		18F8810E20CFD7CD008D2F02 /* OCVChiHistogramCostExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8802C20CFD7CD008D2F02 /* OCVChiHistogramCostExtractor.m */; };
+		18F8810F20CFD7CD008D2F02 /* OCVEMDHistogramCostExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8802E20CFD7CD008D2F02 /* OCVEMDHistogramCostExtractor.m */; };
+		18F8811020CFD7CD008D2F02 /* OCVEMDL1HistogramCostExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8803020CFD7CD008D2F02 /* OCVEMDL1HistogramCostExtractor.m */; };
+		18F8811120CFD7CD008D2F02 /* OCVHausdorffDistanceExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8803220CFD7CD008D2F02 /* OCVHausdorffDistanceExtractor.m */; };
+		18F8811220CFD7CD008D2F02 /* OCVHistogramCostExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8803420CFD7CD008D2F02 /* OCVHistogramCostExtractor.m */; };
+		18F8811320CFD7CD008D2F02 /* OCVNormHistogramCostExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8803620CFD7CD008D2F02 /* OCVNormHistogramCostExtractor.m */; };
+		18F8811420CFD7CD008D2F02 /* OCVShapeContextDistanceExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8803820CFD7CD008D2F02 /* OCVShapeContextDistanceExtractor.m */; };
+		18F8811520CFD7CD008D2F02 /* OCVShapeDistanceExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8803A20CFD7CD008D2F02 /* OCVShapeDistanceExtractor.m */; };
+		18F8811620CFD7CD008D2F02 /* OCVThinPlateSplineShapeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8803C20CFD7CD008D2F02 /* OCVThinPlateSplineShapeTransformer.m */; };
+		18F8811720CFD7CD008D2F02 /* OCVCompressedRectilinearWarper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8803F20CFD7CD008D2F02 /* OCVCompressedRectilinearWarper.m */; };
+		18F8811820CFD7CD008D2F02 /* OCVFeaturesFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8804120CFD7CD008D2F02 /* OCVFeaturesFinder.m */; };
+		18F8811920CFD7CD008D2F02 /* OCVFisheyeWarper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8804320CFD7CD008D2F02 /* OCVFisheyeWarper.m */; };
+		18F8811A20CFD7CD008D2F02 /* OCVMercatorWarper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8804520CFD7CD008D2F02 /* OCVMercatorWarper.m */; };
+		18F8811B20CFD7CD008D2F02 /* OCVOrbFeaturesFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8804720CFD7CD008D2F02 /* OCVOrbFeaturesFinder.m */; };
+		18F8811C20CFD7CD008D2F02 /* OCVPaniniPortraitWarper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8804920CFD7CD008D2F02 /* OCVPaniniPortraitWarper.m */; };
+		18F8811D20CFD7CD008D2F02 /* OCVPaniniWarper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8804B20CFD7CD008D2F02 /* OCVPaniniWarper.m */; };
+		18F8811E20CFD7CD008D2F02 /* OCVPlaneWarper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8804D20CFD7CD008D2F02 /* OCVPlaneWarper.m */; };
+		18F8811F20CFD7CD008D2F02 /* OCVSphericalWarper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8804F20CFD7CD008D2F02 /* OCVSphericalWarper.m */; };
+		18F8812020CFD7CD008D2F02 /* OCVStereographicWarper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8805120CFD7CD008D2F02 /* OCVStereographicWarper.m */; };
+		18F8812120CFD7CD008D2F02 /* OCVSticher.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8805320CFD7CD008D2F02 /* OCVSticher.m */; };
+		18F8812220CFD7CD008D2F02 /* OCVTransverseMercatorWarper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8805520CFD7CD008D2F02 /* OCVTransverseMercatorWarper.m */; };
+		18F8812320CFD7CD008D2F02 /* OCVWarperCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8805720CFD7CD008D2F02 /* OCVWarperCreator.m */; };
+		18F8812420CFD7CD008D2F02 /* OCVRgb.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8805A20CFD7CD008D2F02 /* OCVRgb.m */; };
+		18F8812520CFD7CD008D2F02 /* OCVRgba.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8805C20CFD7CD008D2F02 /* OCVRgba.m */; };
+		18F8812620CFD7CD008D2F02 /* OCVFrameSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8805F20CFD7CD008D2F02 /* OCVFrameSource.m */; };
+		18F8812720CFD7CD008D2F02 /* OCVSuperResolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8806120CFD7CD008D2F02 /* OCVSuperResolution.m */; };
+		18F8812820CFD7CD008D2F02 /* OCVERFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8806420CFD7CD008D2F02 /* OCVERFilter.m */; };
+		18F8812920CFD7CD008D2F02 /* OCVERFilterNM1.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8806620CFD7CD008D2F02 /* OCVERFilterNM1.m */; };
+		18F8812A20CFD7CD008D2F02 /* OCVERFilterNM2.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8806820CFD7CD008D2F02 /* OCVERFilterNM2.m */; };
+		18F8812B20CFD7CD008D2F02 /* OCVERStat.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8806A20CFD7CD008D2F02 /* OCVERStat.m */; };
+		18F8812C20CFD7CD008D2F02 /* OCVTiffWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8806D20CFD7CD008D2F02 /* OCVTiffWriter.m */; };
+		18F8812D20CFD7CD008D2F02 /* OCVTileTiffWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8806F20CFD7CD008D2F02 /* OCVTileTiffWriter.m */; };
+		18F8812E20CFD7CD008D2F02 /* OCVMultiTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8807220CFD7CD008D2F02 /* OCVMultiTracker.m */; };
+		18F8812F20CFD7CD008D2F02 /* OCVTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8807420CFD7CD008D2F02 /* OCVTracker.m */; };
+		18F8813020CFD7CD008D2F02 /* OCVHistogramBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8807720CFD7CD008D2F02 /* OCVHistogramBox.m */; };
+		18F8813120CFD7CD008D2F02 /* OCVHistogramViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8807920CFD7CD008D2F02 /* OCVHistogramViewer.m */; };
+		18F8813220CFD7CD008D2F02 /* OCVObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8807C20CFD7CD008D2F02 /* OCVObject.m */; };
+		18F8813320CFD7CD008D2F02 /* OCVPointerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8807E20CFD7CD008D2F02 /* OCVPointerObject.m */; };
+		18F8813420CFD7CD008D2F02 /* OCVReferenceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8808020CFD7CD008D2F02 /* OCVReferenceObject.m */; };
+		18F8813520CFD7CD008D2F02 /* OCVCamera.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F8808420CFD7CD008D2F02 /* OCVCamera.mm */; };
+		18F8813620CFD7CD008D2F02 /* OCVPhotoCamera.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F8808620CFD7CD008D2F02 /* OCVPhotoCamera.mm */; };
+		18F8813720CFD7CD008D2F02 /* OCVVideoCamera.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18F8808920CFD7CD008D2F02 /* OCVVideoCamera.mm */; };
+		18F8813820CFD7CD008D2F02 /* OCVGaussianMotionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8808C20CFD7CD008D2F02 /* OCVGaussianMotionFilter.m */; };
+		18F8813920CFD7CD008D2F02 /* OCVOnePassStabilizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8808E20CFD7CD008D2F02 /* OCVOnePassStabilizer.m */; };
+		18F8813A20CFD7CD008D2F02 /* OCVTwoPassStabilizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8809020CFD7CD008D2F02 /* OCVTwoPassStabilizer.m */; };
+		18F8813B20CFD7CD008D2F02 /* OCVVideoCaptureFrameSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8809220CFD7CD008D2F02 /* OCVVideoCaptureFrameSource.m */; };
+		18F8813C20CFD7CD008D2F02 /* OCVVideoFrameSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8809420CFD7CD008D2F02 /* OCVVideoFrameSource.m */; };
+		18F8813D20CFD7CE008D2F02 /* OCVBackgroundSubtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8809720CFD7CD008D2F02 /* OCVBackgroundSubtractor.m */; };
+		18F8813E20CFD7CE008D2F02 /* OCVBackgroundSubtractorKNN.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8809920CFD7CD008D2F02 /* OCVBackgroundSubtractorKNN.m */; };
+		18F8813F20CFD7CE008D2F02 /* OCVBackgroundSubtractorMOG2.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8809B20CFD7CD008D2F02 /* OCVBackgroundSubtractorMOG2.m */; };
+		18F8814020CFD7CE008D2F02 /* OCVBriefDescriptorExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8809E20CFD7CD008D2F02 /* OCVBriefDescriptorExtractor.m */; };
+		18F8814120CFD7CE008D2F02 /* OCVCudaSURF.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F880A020CFD7CD008D2F02 /* OCVCudaSURF.m */; };
+		18F8814220CFD7CE008D2F02 /* OCVDAISY.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F880A220CFD7CD008D2F02 /* OCVDAISY.m */; };
+		18F8814320CFD7CE008D2F02 /* OCVFreak.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F880A420CFD7CD008D2F02 /* OCVFreak.m */; };
+		18F8814420CFD7CE008D2F02 /* OCVLATCH.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F880A620CFD7CD008D2F02 /* OCVLATCH.m */; };
+		18F8814520CFD7CE008D2F02 /* OCVLUCID.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F880A820CFD7CD008D2F02 /* OCVLUCID.m */; };
+		18F8814620CFD7CE008D2F02 /* OCVSIFT.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F880AA20CFD7CD008D2F02 /* OCVSIFT.m */; };
+		18F8814720CFD7CE008D2F02 /* OCVStarDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F880AC20CFD7CD008D2F02 /* OCVStarDetector.m */; };
+		18F8814820CFD7CE008D2F02 /* OCVSURF.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F880AE20CFD7CD008D2F02 /* OCVSURF.m */; };
+		18F8814920CFD7CE008D2F02 /* OCVDTFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F880B120CFD7CD008D2F02 /* OCVDTFilter.m */; };
+		18F8814A20CFD7CE008D2F02 /* OCVXPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F880B420CFD7CD008D2F02 /* OCVXPhoto.m */; };
+		3891AB541F064B88E930DC97 /* Pods_Project_openCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A14E247D237A1FE2597CE80 /* Pods_Project_openCV.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18F87D3320CFD74A008D2F02 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		185FCAFD20CE9C5000DD8A07 /* Project_openCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_openCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		185FCB0020CE9C5000DD8A07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		185FCB0220CE9C5000DD8A07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		185FCB0720CE9C5100DD8A07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		185FCB0A20CE9C5100DD8A07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		185FCB0C20CE9C5100DD8A07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F87F4320CFD7B7008D2F02 /* Project_openCV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Project_openCV-Bridging-Header.h"; sourceTree = "<group>"; };
+		18F87F4820CFD7CD008D2F02 /* OCVCharucoBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVCharucoBoard.h; sourceTree = "<group>"; };
+		18F87F4920CFD7CD008D2F02 /* OCVCharucoBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVCharucoBoard.m; sourceTree = "<group>"; };
+		18F87F4B20CFD7CD008D2F02 /* OCVBackgroundSubtractorGMG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVBackgroundSubtractorGMG.h; sourceTree = "<group>"; };
+		18F87F4C20CFD7CD008D2F02 /* OCVBackgroundSubtractorGMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVBackgroundSubtractorGMG.m; sourceTree = "<group>"; };
+		18F87F4D20CFD7CD008D2F02 /* OCVBackgroundSubtractorMOG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVBackgroundSubtractorMOG.h; sourceTree = "<group>"; };
+		18F87F4E20CFD7CD008D2F02 /* OCVBackgroundSubtractorMOG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVBackgroundSubtractorMOG.m; sourceTree = "<group>"; };
+		18F87F5120CFD7CD008D2F02 /* OCVLDA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVLDA.h; sourceTree = "<group>"; };
+		18F87F5220CFD7CD008D2F02 /* OCVLDA.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVLDA.mm; sourceTree = "<group>"; };
+		18F87F5320CFD7CD008D2F02 /* OCVPCA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVPCA.h; sourceTree = "<group>"; };
+		18F87F5420CFD7CD008D2F02 /* OCVPCA.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVPCA.mm; sourceTree = "<group>"; };
+		18F87F5520CFD7CD008D2F02 /* OCVRandomGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVRandomGenerator.h; sourceTree = "<group>"; };
+		18F87F5620CFD7CD008D2F02 /* OCVRandomGenerator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVRandomGenerator.mm; sourceTree = "<group>"; };
+		18F87F5720CFD7CD008D2F02 /* OCVSVD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVSVD.h; sourceTree = "<group>"; };
+		18F87F5820CFD7CD008D2F02 /* OCVSVD.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVSVD.mm; sourceTree = "<group>"; };
+		18F87F5A20CFD7CD008D2F02 /* OCVAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVAlgorithm.h; sourceTree = "<group>"; };
+		18F87F5B20CFD7CD008D2F02 /* OCVAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVAlgorithm.m; sourceTree = "<group>"; };
+		18F87F5C20CFD7CD008D2F02 /* OCVArrayables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVArrayables.h; sourceTree = "<group>"; };
+		18F87F5D20CFD7CD008D2F02 /* OCVComplex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVComplex.h; sourceTree = "<group>"; };
+		18F87F5E20CFD7CD008D2F02 /* OCVComplex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVComplex.m; sourceTree = "<group>"; };
+		18F87F5F20CFD7CD008D2F02 /* OCVEdges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVEdges.h; sourceTree = "<group>"; };
+		18F87F6020CFD7CD008D2F02 /* OCVFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVFormatter.h; sourceTree = "<group>"; };
+		18F87F6120CFD7CD008D2F02 /* OCVFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVFormatter.m; sourceTree = "<group>"; };
+		18F87F6220CFD7CD008D2F02 /* OCVGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVGeometry.h; sourceTree = "<group>"; };
+		18F87F6320CFD7CD008D2F02 /* OCVInputArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVInputArray.h; sourceTree = "<group>"; };
+		18F87F6420CFD7CD008D2F02 /* OCVInputArray.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVInputArray.mm; sourceTree = "<group>"; };
+		18F87F6520CFD7CD008D2F02 /* OCVInputArrayable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVInputArrayable.h; sourceTree = "<group>"; };
+		18F87F6620CFD7CD008D2F02 /* OCVInputOutputArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVInputOutputArray.h; sourceTree = "<group>"; };
+		18F87F6720CFD7CD008D2F02 /* OCVInputOutputArray.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVInputOutputArray.mm; sourceTree = "<group>"; };
+		18F87F6820CFD7CD008D2F02 /* OCVInputOutputArrayable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVInputOutputArrayable.h; sourceTree = "<group>"; };
+		18F87F6920CFD7CD008D2F02 /* OCVOutputArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVOutputArray.h; sourceTree = "<group>"; };
+		18F87F6A20CFD7CD008D2F02 /* OCVOutputArray.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVOutputArray.mm; sourceTree = "<group>"; };
+		18F87F6B20CFD7CD008D2F02 /* OCVOutputArrayable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVOutputArrayable.h; sourceTree = "<group>"; };
+		18F87F6C20CFD7CD008D2F02 /* OCVPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVPoint.h; sourceTree = "<group>"; };
+		18F87F6D20CFD7CD008D2F02 /* OCVRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVRect.h; sourceTree = "<group>"; };
+		18F87F6E20CFD7CD008D2F02 /* OCVRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVRect.m; sourceTree = "<group>"; };
+		18F87F6F20CFD7CD008D2F02 /* OCVScalar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVScalar.h; sourceTree = "<group>"; };
+		18F87F7020CFD7CD008D2F02 /* OCVScalar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVScalar.m; sourceTree = "<group>"; };
+		18F87F7120CFD7CD008D2F02 /* OCVSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVSize.h; sourceTree = "<group>"; };
+		18F87F7220CFD7CD008D2F02 /* OCVTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVTypes.h; sourceTree = "<group>"; };
+		18F87F7320CFD7CD008D2F02 /* OCVVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVVector.h; sourceTree = "<group>"; };
+		18F87F7420CFD7CD008D2F02 /* OCVVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVVector.m; sourceTree = "<group>"; };
+		18F87F7620CFD7CD008D2F02 /* OCVMat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVMat.h; sourceTree = "<group>"; };
+		18F87F7720CFD7CD008D2F02 /* OCVMat.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVMat.mm; sourceTree = "<group>"; };
+		18F87F7820CFD7CD008D2F02 /* OCVMatDataAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVMatDataAllocator.h; sourceTree = "<group>"; };
+		18F87F7920CFD7CD008D2F02 /* OCVMatDataAllocator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVMatDataAllocator.mm; sourceTree = "<group>"; };
+		18F87F7A20CFD7CD008D2F02 /* OCVMatExpr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVMatExpr.h; sourceTree = "<group>"; };
+		18F87F7B20CFD7CD008D2F02 /* OCVMatExpr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVMatExpr.mm; sourceTree = "<group>"; };
+		18F87F7C20CFD7CD008D2F02 /* OCVUMat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVUMat.h; sourceTree = "<group>"; };
+		18F87F7D20CFD7CD008D2F02 /* OCVUMat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVUMat.m; sourceTree = "<group>"; };
+		18F87F7E20CFD7CD008D2F02 /* OCVCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVCore.h; sourceTree = "<group>"; };
+		18F87F8020CFD7CD008D2F02 /* OCVMinimumMaximum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVMinimumMaximum.h; sourceTree = "<group>"; };
+		18F87F8120CFD7CD008D2F02 /* OCVMinimumMaximum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVMinimumMaximum.m; sourceTree = "<group>"; };
+		18F87F8220CFD7CD008D2F02 /* OCVOperation+Bitwise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCVOperation+Bitwise.h"; sourceTree = "<group>"; };
+		18F87F8320CFD7CD008D2F02 /* OCVOperation+Bitwise.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "OCVOperation+Bitwise.mm"; sourceTree = "<group>"; };
+		18F87F8420CFD7CD008D2F02 /* OCVOperation+Transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCVOperation+Transform.h"; sourceTree = "<group>"; };
+		18F87F8520CFD7CD008D2F02 /* OCVOperation+Transform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "OCVOperation+Transform.mm"; sourceTree = "<group>"; };
+		18F87F8620CFD7CD008D2F02 /* OCVOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVOperation.h; sourceTree = "<group>"; };
+		18F87F8720CFD7CD008D2F02 /* OCVOperation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVOperation.mm; sourceTree = "<group>"; };
+		18F87F8820CFD7CD008D2F02 /* OCVTermCriteria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVTermCriteria.h; sourceTree = "<group>"; };
+		18F87F8920CFD7CD008D2F02 /* OCVTermCriteria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVTermCriteria.m; sourceTree = "<group>"; };
+		18F87F8B20CFD7CD008D2F02 /* OCVFileNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVFileNode.h; sourceTree = "<group>"; };
+		18F87F8C20CFD7CD008D2F02 /* OCVFileNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVFileNode.mm; sourceTree = "<group>"; };
+		18F87F8D20CFD7CD008D2F02 /* OCVFileStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVFileStorage.h; sourceTree = "<group>"; };
+		18F87F8E20CFD7CD008D2F02 /* OCVFileStorage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVFileStorage.mm; sourceTree = "<group>"; };
+		18F87F8F20CFD7CD008D2F02 /* OCVFileStorageFormatDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVFileStorageFormatDescriptor.h; sourceTree = "<group>"; };
+		18F87F9020CFD7CD008D2F02 /* OCVFileStorageFormatDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVFileStorageFormatDescriptor.m; sourceTree = "<group>"; };
+		18F87F9120CFD7CD008D2F02 /* OCVPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVPersistence.h; sourceTree = "<group>"; };
+		18F87F9220CFD7CD008D2F02 /* OCVSerializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVSerializable.h; sourceTree = "<group>"; };
+		18F87F9420CFD7CD008D2F02 /* OCVGeometry+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCVGeometry+Private.h"; sourceTree = "<group>"; };
+		18F87F9520CFD7CD008D2F02 /* OCVInputArray+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCVInputArray+Private.h"; sourceTree = "<group>"; };
+		18F87F9620CFD7CD008D2F02 /* OCVInputOutputArray+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCVInputOutputArray+Private.h"; sourceTree = "<group>"; };
+		18F87F9720CFD7CD008D2F02 /* OCVMatDataAllocator+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCVMatDataAllocator+Private.h"; sourceTree = "<group>"; };
+		18F87F9820CFD7CD008D2F02 /* OCVOutputArray+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCVOutputArray+Private.h"; sourceTree = "<group>"; };
+		18F87F9920CFD7CD008D2F02 /* OCVPoint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCVPoint+Private.h"; sourceTree = "<group>"; };
+		18F87F9A20CFD7CD008D2F02 /* OCVPoint+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "OCVPoint+Private.mm"; sourceTree = "<group>"; };
+		18F87F9B20CFD7CD008D2F02 /* OCVRect+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCVRect+Private.h"; sourceTree = "<group>"; };
+		18F87F9C20CFD7CD008D2F02 /* OCVRect+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "OCVRect+Private.mm"; sourceTree = "<group>"; };
+		18F87F9D20CFD7CD008D2F02 /* OCVScalar+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCVScalar+Private.h"; sourceTree = "<group>"; };
+		18F87F9E20CFD7CD008D2F02 /* OCVScalar+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "OCVScalar+Private.mm"; sourceTree = "<group>"; };
+		18F87F9F20CFD7CD008D2F02 /* OCVSize+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCVSize+Private.h"; sourceTree = "<group>"; };
+		18F87FA020CFD7CD008D2F02 /* OCVSize+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "OCVSize+Private.mm"; sourceTree = "<group>"; };
+		18F87FA220CFD7CD008D2F02 /* OCVGPUMat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVGPUMat.h; sourceTree = "<group>"; };
+		18F87FA320CFD7CD008D2F02 /* OCVGPUMat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVGPUMat.m; sourceTree = "<group>"; };
+		18F87FA520CFD7CD008D2F02 /* OCVBlob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVBlob.h; sourceTree = "<group>"; };
+		18F87FA620CFD7CD008D2F02 /* OCVBlob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVBlob.m; sourceTree = "<group>"; };
+		18F87FA820CFD7CD008D2F02 /* OCVStorageOperationType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVStorageOperationType.h; sourceTree = "<group>"; };
+		18F87FA920CFD7CD008D2F02 /* OCVStorageOperationType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVStorageOperationType.m; sourceTree = "<group>"; };
+		18F87FAB20CFD7CD008D2F02 /* OCVImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVImporter.h; sourceTree = "<group>"; };
+		18F87FAC20CFD7CD008D2F02 /* OCVImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVImporter.m; sourceTree = "<group>"; };
+		18F87FAD20CFD7CD008D2F02 /* OCVNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVNet.h; sourceTree = "<group>"; };
+		18F87FAE20CFD7CD008D2F02 /* OCVNet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVNet.m; sourceTree = "<group>"; };
+		18F87FB020CFD7CD008D2F02 /* OCVEigenFaceRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVEigenFaceRecognizer.h; sourceTree = "<group>"; };
+		18F87FB120CFD7CD008D2F02 /* OCVEigenFaceRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVEigenFaceRecognizer.m; sourceTree = "<group>"; };
+		18F87FB220CFD7CD008D2F02 /* OCVFaceRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVFaceRecognizer.h; sourceTree = "<group>"; };
+		18F87FB320CFD7CD008D2F02 /* OCVFaceRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVFaceRecognizer.m; sourceTree = "<group>"; };
+		18F87FB420CFD7CD008D2F02 /* OCVFisherFaceRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVFisherFaceRecognizer.h; sourceTree = "<group>"; };
+		18F87FB520CFD7CD008D2F02 /* OCVFisherFaceRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVFisherFaceRecognizer.m; sourceTree = "<group>"; };
+		18F87FB620CFD7CD008D2F02 /* OCVLBPHFaceRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVLBPHFaceRecognizer.h; sourceTree = "<group>"; };
+		18F87FB720CFD7CD008D2F02 /* OCVLBPHFaceRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVLBPHFaceRecognizer.m; sourceTree = "<group>"; };
+		18F87FB920CFD7CD008D2F02 /* OCVFeature2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVFeature2D.h; sourceTree = "<group>"; };
+		18F87FBA20CFD7CD008D2F02 /* OCVFeature2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVFeature2D.m; sourceTree = "<group>"; };
+		18F87FBC20CFD7CD008D2F02 /* OCVIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVIndex.h; sourceTree = "<group>"; };
+		18F87FBD20CFD7CD008D2F02 /* OCVIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVIndex.m; sourceTree = "<group>"; };
+		18F87FBF20CFD7CD008D2F02 /* OCVFuzzyInvoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVFuzzyInvoke.h; sourceTree = "<group>"; };
+		18F87FC020CFD7CD008D2F02 /* OCVFuzzyInvoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVFuzzyInvoke.m; sourceTree = "<group>"; };
+		18F87FC220CFD7CD008D2F02 /* OCVGeodeticCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVGeodeticCoordinate.h; sourceTree = "<group>"; };
+		18F87FC320CFD7CD008D2F02 /* OCVGeodeticCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVGeodeticCoordinate.m; sourceTree = "<group>"; };
+		18F87FC520CFD7CD008D2F02 /* OCVColorConversionType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVColorConversionType.h; sourceTree = "<group>"; };
+		18F87FC620CFD7CD008D2F02 /* OCVContrastLimitedAdaptiveHistogramEqualization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVContrastLimitedAdaptiveHistogramEqualization.h; sourceTree = "<group>"; };
+		18F87FC720CFD7CD008D2F02 /* OCVContrastLimitedAdaptiveHistogramEqualization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVContrastLimitedAdaptiveHistogramEqualization.m; sourceTree = "<group>"; };
+		18F87FC820CFD7CD008D2F02 /* OCVGeneralizedHough.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVGeneralizedHough.h; sourceTree = "<group>"; };
+		18F87FC920CFD7CD008D2F02 /* OCVGeneralizedHough.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVGeneralizedHough.m; sourceTree = "<group>"; };
+		18F87FCA20CFD7CD008D2F02 /* OCVGeneralizedHoughBallard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVGeneralizedHoughBallard.h; sourceTree = "<group>"; };
+		18F87FCB20CFD7CD008D2F02 /* OCVGeneralizedHoughBallard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVGeneralizedHoughBallard.m; sourceTree = "<group>"; };
+		18F87FCC20CFD7CD008D2F02 /* OCVGeneralizedHoughGuil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVGeneralizedHoughGuil.h; sourceTree = "<group>"; };
+		18F87FCD20CFD7CD008D2F02 /* OCVGeneralizedHoughGuil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVGeneralizedHoughGuil.m; sourceTree = "<group>"; };
+		18F87FCE20CFD7CD008D2F02 /* OCVImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVImage.h; sourceTree = "<group>"; };
+		18F87FCF20CFD7CD008D2F02 /* OCVImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVImage.m; sourceTree = "<group>"; };
+		18F87FD020CFD7CD008D2F02 /* OCVImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVImageOperation.h; sourceTree = "<group>"; };
+		18F87FD120CFD7CD008D2F02 /* OCVImageOperation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVImageOperation.mm; sourceTree = "<group>"; };
+		18F87FD220CFD7CD008D2F02 /* OCVImageProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVImageProcessing.h; sourceTree = "<group>"; };
+		18F87FD320CFD7CD008D2F02 /* OCVImageTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVImageTypes.h; sourceTree = "<group>"; };
+		18F87FD420CFD7CD008D2F02 /* OCVInterpolationType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVInterpolationType.h; sourceTree = "<group>"; };
+		18F87FD520CFD7CD008D2F02 /* OCVLineSegmentDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVLineSegmentDetector.h; sourceTree = "<group>"; };
+		18F87FD620CFD7CD008D2F02 /* OCVLineSegmentDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVLineSegmentDetector.m; sourceTree = "<group>"; };
+		18F87FD720CFD7CD008D2F02 /* OCVSubdiv2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVSubdiv2D.h; sourceTree = "<group>"; };
+		18F87FD820CFD7CD008D2F02 /* OCVSubdiv2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVSubdiv2D.m; sourceTree = "<group>"; };
+		18F87FDA20CFD7CD008D2F02 /* OCVLSDDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVLSDDetector.h; sourceTree = "<group>"; };
+		18F87FDB20CFD7CD008D2F02 /* OCVLSDDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVLSDDetector.m; sourceTree = "<group>"; };
+		18F87FDE20CFD7CD008D2F02 /* OCVBoostType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVBoostType.h; sourceTree = "<group>"; };
+		18F87FDF20CFD7CD008D2F02 /* OCVBoostType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVBoostType.m; sourceTree = "<group>"; };
+		18F87FE020CFD7CD008D2F02 /* OCVVarType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVVarType.h; sourceTree = "<group>"; };
+		18F87FE120CFD7CD008D2F02 /* OCVVarType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVVarType.m; sourceTree = "<group>"; };
+		18F87FE220CFD7CD008D2F02 /* OCVANNMLP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVANNMLP.h; sourceTree = "<group>"; };
+		18F87FE320CFD7CD008D2F02 /* OCVANNMLP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVANNMLP.m; sourceTree = "<group>"; };
+		18F87FE420CFD7CD008D2F02 /* OCVBoost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVBoost.h; sourceTree = "<group>"; };
+		18F87FE520CFD7CD008D2F02 /* OCVBoost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVBoost.m; sourceTree = "<group>"; };
+		18F87FE620CFD7CD008D2F02 /* OCVDTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVDTree.h; sourceTree = "<group>"; };
+		18F87FE720CFD7CD008D2F02 /* OCVDTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVDTree.m; sourceTree = "<group>"; };
+		18F87FE820CFD7CD008D2F02 /* OCVEM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVEM.h; sourceTree = "<group>"; };
+		18F87FE920CFD7CD008D2F02 /* OCVEM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVEM.m; sourceTree = "<group>"; };
+		18F87FEA20CFD7CD008D2F02 /* OCVKNearest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVKNearest.h; sourceTree = "<group>"; };
+		18F87FEB20CFD7CD008D2F02 /* OCVKNearest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVKNearest.m; sourceTree = "<group>"; };
+		18F87FEC20CFD7CD008D2F02 /* OCVLogisticRegression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVLogisticRegression.h; sourceTree = "<group>"; };
+		18F87FED20CFD7CD008D2F02 /* OCVLogisticRegression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVLogisticRegression.m; sourceTree = "<group>"; };
+		18F87FEE20CFD7CD008D2F02 /* OCVNormalBayesClassifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVNormalBayesClassifier.h; sourceTree = "<group>"; };
+		18F87FEF20CFD7CD008D2F02 /* OCVNormalBayesClassifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVNormalBayesClassifier.m; sourceTree = "<group>"; };
+		18F87FF020CFD7CD008D2F02 /* OCVRTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVRTree.h; sourceTree = "<group>"; };
+		18F87FF120CFD7CD008D2F02 /* OCVRTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVRTree.m; sourceTree = "<group>"; };
+		18F87FF220CFD7CD008D2F02 /* OCVStatModelExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVStatModelExtensions.h; sourceTree = "<group>"; };
+		18F87FF320CFD7CD008D2F02 /* OCVStatModelExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVStatModelExtensions.m; sourceTree = "<group>"; };
+		18F87FF420CFD7CD008D2F02 /* OCVSVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVSVM.h; sourceTree = "<group>"; };
+		18F87FF520CFD7CD008D2F02 /* OCVSVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVSVM.m; sourceTree = "<group>"; };
+		18F87FF620CFD7CD008D2F02 /* OCVTrainData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVTrainData.h; sourceTree = "<group>"; };
+		18F87FF720CFD7CD008D2F02 /* OCVTrainData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVTrainData.m; sourceTree = "<group>"; };
+		18F87FF920CFD7CD008D2F02 /* OCVMCvDTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVMCvDTreeNode.h; sourceTree = "<group>"; };
+		18F87FFA20CFD7CD008D2F02 /* OCVMCvDTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVMCvDTreeNode.m; sourceTree = "<group>"; };
+		18F87FFB20CFD7CD008D2F02 /* OCVMCvDTreeSplit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVMCvDTreeSplit.h; sourceTree = "<group>"; };
+		18F87FFC20CFD7CD008D2F02 /* OCVMCvDTreeSplit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVMCvDTreeSplit.m; sourceTree = "<group>"; };
+		18F87FFD20CFD7CD008D2F02 /* OCVMCvDTreeSplitMOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVMCvDTreeSplitMOrder.h; sourceTree = "<group>"; };
+		18F87FFE20CFD7CD008D2F02 /* OCVMCvDTreeSplitMOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVMCvDTreeSplitMOrder.m; sourceTree = "<group>"; };
+		18F87FFF20CFD7CD008D2F02 /* OCVMCvParamGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVMCvParamGrid.h; sourceTree = "<group>"; };
+		18F8800020CFD7CD008D2F02 /* OCVMCvParamGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVMCvParamGrid.m; sourceTree = "<group>"; };
+		18F8800220CFD7CD008D2F02 /* OCVBaseCascadeClassifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVBaseCascadeClassifier.h; sourceTree = "<group>"; };
+		18F8800320CFD7CD008D2F02 /* OCVBaseCascadeClassifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVBaseCascadeClassifier.m; sourceTree = "<group>"; };
+		18F8800420CFD7CD008D2F02 /* OCVCascadeClassifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVCascadeClassifier.h; sourceTree = "<group>"; };
+		18F8800520CFD7CD008D2F02 /* OCVCascadeClassifier.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVCascadeClassifier.mm; sourceTree = "<group>"; };
+		18F8800620CFD7CD008D2F02 /* OCVCascadeClassifierOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVCascadeClassifierOptions.h; sourceTree = "<group>"; };
+		18F8800720CFD7CD008D2F02 /* OCVCascadeClassifierOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVCascadeClassifierOptions.m; sourceTree = "<group>"; };
+		18F8800820CFD7CD008D2F02 /* OCVCascadeClassifierResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVCascadeClassifierResult.h; sourceTree = "<group>"; };
+		18F8800920CFD7CD008D2F02 /* OCVCascadeClassifierResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVCascadeClassifierResult.m; sourceTree = "<group>"; };
+		18F8800B20CFD7CD008D2F02 /* OCVDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVDevice.h; sourceTree = "<group>"; };
+		18F8800C20CFD7CD008D2F02 /* OCVDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVDevice.m; sourceTree = "<group>"; };
+		18F8800D20CFD7CD008D2F02 /* OCVImage2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVImage2D.h; sourceTree = "<group>"; };
+		18F8800E20CFD7CD008D2F02 /* OCVImage2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVImage2D.m; sourceTree = "<group>"; };
+		18F8800F20CFD7CD008D2F02 /* OCVKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVKernel.h; sourceTree = "<group>"; };
+		18F8801020CFD7CD008D2F02 /* OCVKernel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVKernel.m; sourceTree = "<group>"; };
+		18F8801120CFD7CD008D2F02 /* OCVKernelConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVKernelConfiguration.h; sourceTree = "<group>"; };
+		18F8801220CFD7CD008D2F02 /* OCVKernelConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVKernelConfiguration.m; sourceTree = "<group>"; };
+		18F8801320CFD7CD008D2F02 /* OCVPlatformInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVPlatformInfo.h; sourceTree = "<group>"; };
+		18F8801420CFD7CD008D2F02 /* OCVPlatformInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVPlatformInfo.m; sourceTree = "<group>"; };
+		18F8801520CFD7CD008D2F02 /* OCVProgramSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVProgramSource.h; sourceTree = "<group>"; };
+		18F8801620CFD7CD008D2F02 /* OCVProgramSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVProgramSource.m; sourceTree = "<group>"; };
+		18F8801720CFD7CD008D2F02 /* OCVQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVQueue.h; sourceTree = "<group>"; };
+		18F8801820CFD7CD008D2F02 /* OCVQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVQueue.m; sourceTree = "<group>"; };
+		18F8801A20CFD7CD008D2F02 /* OCVOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVOrientation.h; sourceTree = "<group>"; };
+		18F8801B20CFD7CD008D2F02 /* OCVOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVOrientation.m; sourceTree = "<group>"; };
+		18F8801C20CFD7CD008D2F02 /* OCVPageIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVPageIterator.h; sourceTree = "<group>"; };
+		18F8801D20CFD7CD008D2F02 /* OCVPageIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVPageIterator.m; sourceTree = "<group>"; };
+		18F8801E20CFD7CD008D2F02 /* OCVTesseract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVTesseract.h; sourceTree = "<group>"; };
+		18F8801F20CFD7CD008D2F02 /* OCVTesseract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVTesseract.m; sourceTree = "<group>"; };
+		18F8802020CFD7CD008D2F02 /* OCVTesseractResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVTesseractResult.h; sourceTree = "<group>"; };
+		18F8802120CFD7CD008D2F02 /* OCVTesseractResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVTesseractResult.m; sourceTree = "<group>"; };
+		18F8802320CFD7CD008D2F02 /* OCVPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVPlot.h; sourceTree = "<group>"; };
+		18F8802420CFD7CD008D2F02 /* OCVPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVPlot.m; sourceTree = "<group>"; };
+		18F8802620CFD7CD008D2F02 /* OCVReflectImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVReflectImage.h; sourceTree = "<group>"; };
+		18F8802720CFD7CD008D2F02 /* OCVReflectImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVReflectImage.m; sourceTree = "<group>"; };
+		18F8802920CFD7CD008D2F02 /* OCVAffineTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVAffineTransformer.h; sourceTree = "<group>"; };
+		18F8802A20CFD7CD008D2F02 /* OCVAffineTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVAffineTransformer.m; sourceTree = "<group>"; };
+		18F8802B20CFD7CD008D2F02 /* OCVChiHistogramCostExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVChiHistogramCostExtractor.h; sourceTree = "<group>"; };
+		18F8802C20CFD7CD008D2F02 /* OCVChiHistogramCostExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVChiHistogramCostExtractor.m; sourceTree = "<group>"; };
+		18F8802D20CFD7CD008D2F02 /* OCVEMDHistogramCostExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVEMDHistogramCostExtractor.h; sourceTree = "<group>"; };
+		18F8802E20CFD7CD008D2F02 /* OCVEMDHistogramCostExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVEMDHistogramCostExtractor.m; sourceTree = "<group>"; };
+		18F8802F20CFD7CD008D2F02 /* OCVEMDL1HistogramCostExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVEMDL1HistogramCostExtractor.h; sourceTree = "<group>"; };
+		18F8803020CFD7CD008D2F02 /* OCVEMDL1HistogramCostExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVEMDL1HistogramCostExtractor.m; sourceTree = "<group>"; };
+		18F8803120CFD7CD008D2F02 /* OCVHausdorffDistanceExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVHausdorffDistanceExtractor.h; sourceTree = "<group>"; };
+		18F8803220CFD7CD008D2F02 /* OCVHausdorffDistanceExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVHausdorffDistanceExtractor.m; sourceTree = "<group>"; };
+		18F8803320CFD7CD008D2F02 /* OCVHistogramCostExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVHistogramCostExtractor.h; sourceTree = "<group>"; };
+		18F8803420CFD7CD008D2F02 /* OCVHistogramCostExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVHistogramCostExtractor.m; sourceTree = "<group>"; };
+		18F8803520CFD7CD008D2F02 /* OCVNormHistogramCostExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVNormHistogramCostExtractor.h; sourceTree = "<group>"; };
+		18F8803620CFD7CD008D2F02 /* OCVNormHistogramCostExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVNormHistogramCostExtractor.m; sourceTree = "<group>"; };
+		18F8803720CFD7CD008D2F02 /* OCVShapeContextDistanceExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVShapeContextDistanceExtractor.h; sourceTree = "<group>"; };
+		18F8803820CFD7CD008D2F02 /* OCVShapeContextDistanceExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVShapeContextDistanceExtractor.m; sourceTree = "<group>"; };
+		18F8803920CFD7CD008D2F02 /* OCVShapeDistanceExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVShapeDistanceExtractor.h; sourceTree = "<group>"; };
+		18F8803A20CFD7CD008D2F02 /* OCVShapeDistanceExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVShapeDistanceExtractor.m; sourceTree = "<group>"; };
+		18F8803B20CFD7CD008D2F02 /* OCVThinPlateSplineShapeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVThinPlateSplineShapeTransformer.h; sourceTree = "<group>"; };
+		18F8803C20CFD7CD008D2F02 /* OCVThinPlateSplineShapeTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVThinPlateSplineShapeTransformer.m; sourceTree = "<group>"; };
+		18F8803E20CFD7CD008D2F02 /* OCVCompressedRectilinearWarper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVCompressedRectilinearWarper.h; sourceTree = "<group>"; };
+		18F8803F20CFD7CD008D2F02 /* OCVCompressedRectilinearWarper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVCompressedRectilinearWarper.m; sourceTree = "<group>"; };
+		18F8804020CFD7CD008D2F02 /* OCVFeaturesFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVFeaturesFinder.h; sourceTree = "<group>"; };
+		18F8804120CFD7CD008D2F02 /* OCVFeaturesFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVFeaturesFinder.m; sourceTree = "<group>"; };
+		18F8804220CFD7CD008D2F02 /* OCVFisheyeWarper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVFisheyeWarper.h; sourceTree = "<group>"; };
+		18F8804320CFD7CD008D2F02 /* OCVFisheyeWarper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVFisheyeWarper.m; sourceTree = "<group>"; };
+		18F8804420CFD7CD008D2F02 /* OCVMercatorWarper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVMercatorWarper.h; sourceTree = "<group>"; };
+		18F8804520CFD7CD008D2F02 /* OCVMercatorWarper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVMercatorWarper.m; sourceTree = "<group>"; };
+		18F8804620CFD7CD008D2F02 /* OCVOrbFeaturesFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVOrbFeaturesFinder.h; sourceTree = "<group>"; };
+		18F8804720CFD7CD008D2F02 /* OCVOrbFeaturesFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVOrbFeaturesFinder.m; sourceTree = "<group>"; };
+		18F8804820CFD7CD008D2F02 /* OCVPaniniPortraitWarper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVPaniniPortraitWarper.h; sourceTree = "<group>"; };
+		18F8804920CFD7CD008D2F02 /* OCVPaniniPortraitWarper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVPaniniPortraitWarper.m; sourceTree = "<group>"; };
+		18F8804A20CFD7CD008D2F02 /* OCVPaniniWarper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVPaniniWarper.h; sourceTree = "<group>"; };
+		18F8804B20CFD7CD008D2F02 /* OCVPaniniWarper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVPaniniWarper.m; sourceTree = "<group>"; };
+		18F8804C20CFD7CD008D2F02 /* OCVPlaneWarper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVPlaneWarper.h; sourceTree = "<group>"; };
+		18F8804D20CFD7CD008D2F02 /* OCVPlaneWarper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVPlaneWarper.m; sourceTree = "<group>"; };
+		18F8804E20CFD7CD008D2F02 /* OCVSphericalWarper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVSphericalWarper.h; sourceTree = "<group>"; };
+		18F8804F20CFD7CD008D2F02 /* OCVSphericalWarper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVSphericalWarper.m; sourceTree = "<group>"; };
+		18F8805020CFD7CD008D2F02 /* OCVStereographicWarper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVStereographicWarper.h; sourceTree = "<group>"; };
+		18F8805120CFD7CD008D2F02 /* OCVStereographicWarper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVStereographicWarper.m; sourceTree = "<group>"; };
+		18F8805220CFD7CD008D2F02 /* OCVSticher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVSticher.h; sourceTree = "<group>"; };
+		18F8805320CFD7CD008D2F02 /* OCVSticher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVSticher.m; sourceTree = "<group>"; };
+		18F8805420CFD7CD008D2F02 /* OCVTransverseMercatorWarper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVTransverseMercatorWarper.h; sourceTree = "<group>"; };
+		18F8805520CFD7CD008D2F02 /* OCVTransverseMercatorWarper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVTransverseMercatorWarper.m; sourceTree = "<group>"; };
+		18F8805620CFD7CD008D2F02 /* OCVWarperCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVWarperCreator.h; sourceTree = "<group>"; };
+		18F8805720CFD7CD008D2F02 /* OCVWarperCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVWarperCreator.m; sourceTree = "<group>"; };
+		18F8805920CFD7CD008D2F02 /* OCVRgb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVRgb.h; sourceTree = "<group>"; };
+		18F8805A20CFD7CD008D2F02 /* OCVRgb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVRgb.m; sourceTree = "<group>"; };
+		18F8805B20CFD7CD008D2F02 /* OCVRgba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVRgba.h; sourceTree = "<group>"; };
+		18F8805C20CFD7CD008D2F02 /* OCVRgba.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVRgba.m; sourceTree = "<group>"; };
+		18F8805E20CFD7CD008D2F02 /* OCVFrameSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVFrameSource.h; sourceTree = "<group>"; };
+		18F8805F20CFD7CD008D2F02 /* OCVFrameSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVFrameSource.m; sourceTree = "<group>"; };
+		18F8806020CFD7CD008D2F02 /* OCVSuperResolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVSuperResolution.h; sourceTree = "<group>"; };
+		18F8806120CFD7CD008D2F02 /* OCVSuperResolution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVSuperResolution.m; sourceTree = "<group>"; };
+		18F8806320CFD7CD008D2F02 /* OCVERFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVERFilter.h; sourceTree = "<group>"; };
+		18F8806420CFD7CD008D2F02 /* OCVERFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVERFilter.m; sourceTree = "<group>"; };
+		18F8806520CFD7CD008D2F02 /* OCVERFilterNM1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVERFilterNM1.h; sourceTree = "<group>"; };
+		18F8806620CFD7CD008D2F02 /* OCVERFilterNM1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVERFilterNM1.m; sourceTree = "<group>"; };
+		18F8806720CFD7CD008D2F02 /* OCVERFilterNM2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVERFilterNM2.h; sourceTree = "<group>"; };
+		18F8806820CFD7CD008D2F02 /* OCVERFilterNM2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVERFilterNM2.m; sourceTree = "<group>"; };
+		18F8806920CFD7CD008D2F02 /* OCVERStat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVERStat.h; sourceTree = "<group>"; };
+		18F8806A20CFD7CD008D2F02 /* OCVERStat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVERStat.m; sourceTree = "<group>"; };
+		18F8806C20CFD7CD008D2F02 /* OCVTiffWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVTiffWriter.h; sourceTree = "<group>"; };
+		18F8806D20CFD7CD008D2F02 /* OCVTiffWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVTiffWriter.m; sourceTree = "<group>"; };
+		18F8806E20CFD7CD008D2F02 /* OCVTileTiffWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVTileTiffWriter.h; sourceTree = "<group>"; };
+		18F8806F20CFD7CD008D2F02 /* OCVTileTiffWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVTileTiffWriter.m; sourceTree = "<group>"; };
+		18F8807120CFD7CD008D2F02 /* OCVMultiTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVMultiTracker.h; sourceTree = "<group>"; };
+		18F8807220CFD7CD008D2F02 /* OCVMultiTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVMultiTracker.m; sourceTree = "<group>"; };
+		18F8807320CFD7CD008D2F02 /* OCVTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVTracker.h; sourceTree = "<group>"; };
+		18F8807420CFD7CD008D2F02 /* OCVTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVTracker.m; sourceTree = "<group>"; };
+		18F8807620CFD7CD008D2F02 /* OCVHistogramBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVHistogramBox.h; sourceTree = "<group>"; };
+		18F8807720CFD7CD008D2F02 /* OCVHistogramBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVHistogramBox.m; sourceTree = "<group>"; };
+		18F8807820CFD7CD008D2F02 /* OCVHistogramViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVHistogramViewer.h; sourceTree = "<group>"; };
+		18F8807920CFD7CD008D2F02 /* OCVHistogramViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVHistogramViewer.m; sourceTree = "<group>"; };
+		18F8807B20CFD7CD008D2F02 /* OCVObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVObject.h; sourceTree = "<group>"; };
+		18F8807C20CFD7CD008D2F02 /* OCVObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVObject.m; sourceTree = "<group>"; };
+		18F8807D20CFD7CD008D2F02 /* OCVPointerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVPointerObject.h; sourceTree = "<group>"; };
+		18F8807E20CFD7CD008D2F02 /* OCVPointerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVPointerObject.m; sourceTree = "<group>"; };
+		18F8807F20CFD7CD008D2F02 /* OCVReferenceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVReferenceObject.h; sourceTree = "<group>"; };
+		18F8808020CFD7CD008D2F02 /* OCVReferenceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVReferenceObject.m; sourceTree = "<group>"; };
+		18F8808220CFD7CD008D2F02 /* OCVCamera+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCVCamera+Private.h"; sourceTree = "<group>"; };
+		18F8808320CFD7CD008D2F02 /* OCVCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVCamera.h; sourceTree = "<group>"; };
+		18F8808420CFD7CD008D2F02 /* OCVCamera.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVCamera.mm; sourceTree = "<group>"; };
+		18F8808520CFD7CD008D2F02 /* OCVPhotoCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVPhotoCamera.h; sourceTree = "<group>"; };
+		18F8808620CFD7CD008D2F02 /* OCVPhotoCamera.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVPhotoCamera.mm; sourceTree = "<group>"; };
+		18F8808720CFD7CD008D2F02 /* OCVVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVVideo.h; sourceTree = "<group>"; };
+		18F8808820CFD7CD008D2F02 /* OCVVideoCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVVideoCamera.h; sourceTree = "<group>"; };
+		18F8808920CFD7CD008D2F02 /* OCVVideoCamera.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVVideoCamera.mm; sourceTree = "<group>"; };
+		18F8808B20CFD7CD008D2F02 /* OCVGaussianMotionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVGaussianMotionFilter.h; sourceTree = "<group>"; };
+		18F8808C20CFD7CD008D2F02 /* OCVGaussianMotionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVGaussianMotionFilter.m; sourceTree = "<group>"; };
+		18F8808D20CFD7CD008D2F02 /* OCVOnePassStabilizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVOnePassStabilizer.h; sourceTree = "<group>"; };
+		18F8808E20CFD7CD008D2F02 /* OCVOnePassStabilizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVOnePassStabilizer.m; sourceTree = "<group>"; };
+		18F8808F20CFD7CD008D2F02 /* OCVTwoPassStabilizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVTwoPassStabilizer.h; sourceTree = "<group>"; };
+		18F8809020CFD7CD008D2F02 /* OCVTwoPassStabilizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVTwoPassStabilizer.m; sourceTree = "<group>"; };
+		18F8809120CFD7CD008D2F02 /* OCVVideoCaptureFrameSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVVideoCaptureFrameSource.h; sourceTree = "<group>"; };
+		18F8809220CFD7CD008D2F02 /* OCVVideoCaptureFrameSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVVideoCaptureFrameSource.m; sourceTree = "<group>"; };
+		18F8809320CFD7CD008D2F02 /* OCVVideoFrameSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVVideoFrameSource.h; sourceTree = "<group>"; };
+		18F8809420CFD7CD008D2F02 /* OCVVideoFrameSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVVideoFrameSource.m; sourceTree = "<group>"; };
+		18F8809620CFD7CD008D2F02 /* OCVBackgroundSubtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVBackgroundSubtractor.h; sourceTree = "<group>"; };
+		18F8809720CFD7CD008D2F02 /* OCVBackgroundSubtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVBackgroundSubtractor.m; sourceTree = "<group>"; };
+		18F8809820CFD7CD008D2F02 /* OCVBackgroundSubtractorKNN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVBackgroundSubtractorKNN.h; sourceTree = "<group>"; };
+		18F8809920CFD7CD008D2F02 /* OCVBackgroundSubtractorKNN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVBackgroundSubtractorKNN.m; sourceTree = "<group>"; };
+		18F8809A20CFD7CD008D2F02 /* OCVBackgroundSubtractorMOG2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVBackgroundSubtractorMOG2.h; sourceTree = "<group>"; };
+		18F8809B20CFD7CD008D2F02 /* OCVBackgroundSubtractorMOG2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVBackgroundSubtractorMOG2.m; sourceTree = "<group>"; };
+		18F8809D20CFD7CD008D2F02 /* OCVBriefDescriptorExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVBriefDescriptorExtractor.h; sourceTree = "<group>"; };
+		18F8809E20CFD7CD008D2F02 /* OCVBriefDescriptorExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVBriefDescriptorExtractor.m; sourceTree = "<group>"; };
+		18F8809F20CFD7CD008D2F02 /* OCVCudaSURF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVCudaSURF.h; sourceTree = "<group>"; };
+		18F880A020CFD7CD008D2F02 /* OCVCudaSURF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVCudaSURF.m; sourceTree = "<group>"; };
+		18F880A120CFD7CD008D2F02 /* OCVDAISY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVDAISY.h; sourceTree = "<group>"; };
+		18F880A220CFD7CD008D2F02 /* OCVDAISY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVDAISY.m; sourceTree = "<group>"; };
+		18F880A320CFD7CD008D2F02 /* OCVFreak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVFreak.h; sourceTree = "<group>"; };
+		18F880A420CFD7CD008D2F02 /* OCVFreak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVFreak.m; sourceTree = "<group>"; };
+		18F880A520CFD7CD008D2F02 /* OCVLATCH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVLATCH.h; sourceTree = "<group>"; };
+		18F880A620CFD7CD008D2F02 /* OCVLATCH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVLATCH.m; sourceTree = "<group>"; };
+		18F880A720CFD7CD008D2F02 /* OCVLUCID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVLUCID.h; sourceTree = "<group>"; };
+		18F880A820CFD7CD008D2F02 /* OCVLUCID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVLUCID.m; sourceTree = "<group>"; };
+		18F880A920CFD7CD008D2F02 /* OCVSIFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVSIFT.h; sourceTree = "<group>"; };
+		18F880AA20CFD7CD008D2F02 /* OCVSIFT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVSIFT.m; sourceTree = "<group>"; };
+		18F880AB20CFD7CD008D2F02 /* OCVStarDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVStarDetector.h; sourceTree = "<group>"; };
+		18F880AC20CFD7CD008D2F02 /* OCVStarDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVStarDetector.m; sourceTree = "<group>"; };
+		18F880AD20CFD7CD008D2F02 /* OCVSURF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVSURF.h; sourceTree = "<group>"; };
+		18F880AE20CFD7CD008D2F02 /* OCVSURF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVSURF.m; sourceTree = "<group>"; };
+		18F880B020CFD7CD008D2F02 /* OCVDTFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVDTFilter.h; sourceTree = "<group>"; };
+		18F880B120CFD7CD008D2F02 /* OCVDTFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVDTFilter.m; sourceTree = "<group>"; };
+		18F880B320CFD7CD008D2F02 /* OCVXPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVXPhoto.h; sourceTree = "<group>"; };
+		18F880B420CFD7CD008D2F02 /* OCVXPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVXPhoto.m; sourceTree = "<group>"; };
+		4A14E247D237A1FE2597CE80 /* Pods_Project_openCV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_openCV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		946D8E381EDD20F19FDC72C2 /* Pods-Project_openCV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project_openCV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project_openCV/Pods-Project_openCV.debug.xcconfig"; sourceTree = "<group>"; };
+		C0D85F7BC1912BDBF66030FA /* Pods-Project_openCV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project_openCV.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project_openCV/Pods-Project_openCV.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		185FCAFA20CE9C5000DD8A07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3891AB541F064B88E930DC97 /* Pods_Project_openCV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		185FCAF420CE9C5000DD8A07 = {
+			isa = PBXGroup;
+			children = (
+				18F87F4620CFD7CD008D2F02 /* Wrapper */,
+				185FCAFF20CE9C5000DD8A07 /* Project_openCV */,
+				185FCAFE20CE9C5000DD8A07 /* Products */,
+				18F87F4320CFD7B7008D2F02 /* Project_openCV-Bridging-Header.h */,
+				9239F33F97894783ABAA938E /* Pods */,
+				2D918CAA7A0E2ECB72A7B913 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		185FCAFE20CE9C5000DD8A07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				185FCAFD20CE9C5000DD8A07 /* Project_openCV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		185FCAFF20CE9C5000DD8A07 /* Project_openCV */ = {
+			isa = PBXGroup;
+			children = (
+				185FCB0020CE9C5000DD8A07 /* AppDelegate.swift */,
+				185FCB0220CE9C5000DD8A07 /* ViewController.swift */,
+				185FCB0720CE9C5100DD8A07 /* Assets.xcassets */,
+				185FCB0920CE9C5100DD8A07 /* LaunchScreen.storyboard */,
+				185FCB0C20CE9C5100DD8A07 /* Info.plist */,
+			);
+			path = Project_openCV;
+			sourceTree = "<group>";
+		};
+		18F87F4620CFD7CD008D2F02 /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				18F87F4720CFD7CD008D2F02 /* Aruco */,
+				18F87F4A20CFD7CD008D2F02 /* BgSegm */,
+				18F87F4F20CFD7CD008D2F02 /* Core */,
+				18F87FA120CFD7CD008D2F02 /* Cuda */,
+				18F87FA420CFD7CD008D2F02 /* Cvb */,
+				18F87FA720CFD7CD008D2F02 /* CvEnum */,
+				18F87FAA20CFD7CD008D2F02 /* Dnn */,
+				18F87FAF20CFD7CD008D2F02 /* Face */,
+				18F87FB820CFD7CD008D2F02 /* Features2D */,
+				18F87FBB20CFD7CD008D2F02 /* Flann */,
+				18F87FBE20CFD7CD008D2F02 /* Fuzzy */,
+				18F87FC120CFD7CD008D2F02 /* Geodetic */,
+				18F87FC420CFD7CD008D2F02 /* ImageProcessing */,
+				18F87FD920CFD7CD008D2F02 /* LineDescriptor */,
+				18F87FDC20CFD7CD008D2F02 /* ML */,
+				18F8800120CFD7CD008D2F02 /* ObjectDetection */,
+				18F8800A20CFD7CD008D2F02 /* Ocl */,
+				18F8801920CFD7CD008D2F02 /* OCR */,
+				18F8802220CFD7CD008D2F02 /* Plot */,
+				18F8802520CFD7CD008D2F02 /* Reflection */,
+				18F8802820CFD7CD008D2F02 /* Shape */,
+				18F8803D20CFD7CD008D2F02 /* Stitching */,
+				18F8805820CFD7CD008D2F02 /* Structure */,
+				18F8805D20CFD7CD008D2F02 /* Superres */,
+				18F8806220CFD7CD008D2F02 /* Text */,
+				18F8806B20CFD7CD008D2F02 /* Tiff */,
+				18F8807020CFD7CD008D2F02 /* Tracking */,
+				18F8807520CFD7CD008D2F02 /* UI */,
+				18F8807A20CFD7CD008D2F02 /* Utilities */,
+				18F8808120CFD7CD008D2F02 /* Video */,
+				18F8808A20CFD7CD008D2F02 /* VideoStab */,
+				18F8809520CFD7CD008D2F02 /* VideoSurveillance */,
+				18F8809C20CFD7CD008D2F02 /* XFeatures2D */,
+				18F880AF20CFD7CD008D2F02 /* XImgproc */,
+				18F880B220CFD7CD008D2F02 /* XPhoto */,
+			);
+			path = Wrapper;
+			sourceTree = "<group>";
+		};
+		18F87F4720CFD7CD008D2F02 /* Aruco */ = {
+			isa = PBXGroup;
+			children = (
+				18F87F4820CFD7CD008D2F02 /* OCVCharucoBoard.h */,
+				18F87F4920CFD7CD008D2F02 /* OCVCharucoBoard.m */,
+			);
+			path = Aruco;
+			sourceTree = "<group>";
+		};
+		18F87F4A20CFD7CD008D2F02 /* BgSegm */ = {
+			isa = PBXGroup;
+			children = (
+				18F87F4B20CFD7CD008D2F02 /* OCVBackgroundSubtractorGMG.h */,
+				18F87F4C20CFD7CD008D2F02 /* OCVBackgroundSubtractorGMG.m */,
+				18F87F4D20CFD7CD008D2F02 /* OCVBackgroundSubtractorMOG.h */,
+				18F87F4E20CFD7CD008D2F02 /* OCVBackgroundSubtractorMOG.m */,
+			);
+			path = BgSegm;
+			sourceTree = "<group>";
+		};
+		18F87F4F20CFD7CD008D2F02 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				18F87F5020CFD7CD008D2F02 /* Algorithms */,
+				18F87F5920CFD7CD008D2F02 /* Base */,
+				18F87F7520CFD7CD008D2F02 /* Mat */,
+				18F87F7E20CFD7CD008D2F02 /* OCVCore.h */,
+				18F87F7F20CFD7CD008D2F02 /* Operations */,
+				18F87F8A20CFD7CD008D2F02 /* Persistence */,
+				18F87F9320CFD7CD008D2F02 /* Private */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		18F87F5020CFD7CD008D2F02 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				18F87F5120CFD7CD008D2F02 /* OCVLDA.h */,
+				18F87F5220CFD7CD008D2F02 /* OCVLDA.mm */,
+				18F87F5320CFD7CD008D2F02 /* OCVPCA.h */,
+				18F87F5420CFD7CD008D2F02 /* OCVPCA.mm */,
+				18F87F5520CFD7CD008D2F02 /* OCVRandomGenerator.h */,
+				18F87F5620CFD7CD008D2F02 /* OCVRandomGenerator.mm */,
+				18F87F5720CFD7CD008D2F02 /* OCVSVD.h */,
+				18F87F5820CFD7CD008D2F02 /* OCVSVD.mm */,
+			);
+			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		18F87F5920CFD7CD008D2F02 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				18F87F5A20CFD7CD008D2F02 /* OCVAlgorithm.h */,
+				18F87F5B20CFD7CD008D2F02 /* OCVAlgorithm.m */,
+				18F87F5C20CFD7CD008D2F02 /* OCVArrayables.h */,
+				18F87F5D20CFD7CD008D2F02 /* OCVComplex.h */,
+				18F87F5E20CFD7CD008D2F02 /* OCVComplex.m */,
+				18F87F5F20CFD7CD008D2F02 /* OCVEdges.h */,
+				18F87F6020CFD7CD008D2F02 /* OCVFormatter.h */,
+				18F87F6120CFD7CD008D2F02 /* OCVFormatter.m */,
+				18F87F6220CFD7CD008D2F02 /* OCVGeometry.h */,
+				18F87F6320CFD7CD008D2F02 /* OCVInputArray.h */,
+				18F87F6420CFD7CD008D2F02 /* OCVInputArray.mm */,
+				18F87F6520CFD7CD008D2F02 /* OCVInputArrayable.h */,
+				18F87F6620CFD7CD008D2F02 /* OCVInputOutputArray.h */,
+				18F87F6720CFD7CD008D2F02 /* OCVInputOutputArray.mm */,
+				18F87F6820CFD7CD008D2F02 /* OCVInputOutputArrayable.h */,
+				18F87F6920CFD7CD008D2F02 /* OCVOutputArray.h */,
+				18F87F6A20CFD7CD008D2F02 /* OCVOutputArray.mm */,
+				18F87F6B20CFD7CD008D2F02 /* OCVOutputArrayable.h */,
+				18F87F6C20CFD7CD008D2F02 /* OCVPoint.h */,
+				18F87F6D20CFD7CD008D2F02 /* OCVRect.h */,
+				18F87F6E20CFD7CD008D2F02 /* OCVRect.m */,
+				18F87F6F20CFD7CD008D2F02 /* OCVScalar.h */,
+				18F87F7020CFD7CD008D2F02 /* OCVScalar.m */,
+				18F87F7120CFD7CD008D2F02 /* OCVSize.h */,
+				18F87F7220CFD7CD008D2F02 /* OCVTypes.h */,
+				18F87F7320CFD7CD008D2F02 /* OCVVector.h */,
+				18F87F7420CFD7CD008D2F02 /* OCVVector.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		18F87F7520CFD7CD008D2F02 /* Mat */ = {
+			isa = PBXGroup;
+			children = (
+				18F87F7620CFD7CD008D2F02 /* OCVMat.h */,
+				18F87F7720CFD7CD008D2F02 /* OCVMat.mm */,
+				18F87F7820CFD7CD008D2F02 /* OCVMatDataAllocator.h */,
+				18F87F7920CFD7CD008D2F02 /* OCVMatDataAllocator.mm */,
+				18F87F7A20CFD7CD008D2F02 /* OCVMatExpr.h */,
+				18F87F7B20CFD7CD008D2F02 /* OCVMatExpr.mm */,
+				18F87F7C20CFD7CD008D2F02 /* OCVUMat.h */,
+				18F87F7D20CFD7CD008D2F02 /* OCVUMat.m */,
+			);
+			path = Mat;
+			sourceTree = "<group>";
+		};
+		18F87F7F20CFD7CD008D2F02 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				18F87F8020CFD7CD008D2F02 /* OCVMinimumMaximum.h */,
+				18F87F8120CFD7CD008D2F02 /* OCVMinimumMaximum.m */,
+				18F87F8220CFD7CD008D2F02 /* OCVOperation+Bitwise.h */,
+				18F87F8320CFD7CD008D2F02 /* OCVOperation+Bitwise.mm */,
+				18F87F8420CFD7CD008D2F02 /* OCVOperation+Transform.h */,
+				18F87F8520CFD7CD008D2F02 /* OCVOperation+Transform.mm */,
+				18F87F8620CFD7CD008D2F02 /* OCVOperation.h */,
+				18F87F8720CFD7CD008D2F02 /* OCVOperation.mm */,
+				18F87F8820CFD7CD008D2F02 /* OCVTermCriteria.h */,
+				18F87F8920CFD7CD008D2F02 /* OCVTermCriteria.m */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		18F87F8A20CFD7CD008D2F02 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				18F87F8B20CFD7CD008D2F02 /* OCVFileNode.h */,
+				18F87F8C20CFD7CD008D2F02 /* OCVFileNode.mm */,
+				18F87F8D20CFD7CD008D2F02 /* OCVFileStorage.h */,
+				18F87F8E20CFD7CD008D2F02 /* OCVFileStorage.mm */,
+				18F87F8F20CFD7CD008D2F02 /* OCVFileStorageFormatDescriptor.h */,
+				18F87F9020CFD7CD008D2F02 /* OCVFileStorageFormatDescriptor.m */,
+				18F87F9120CFD7CD008D2F02 /* OCVPersistence.h */,
+				18F87F9220CFD7CD008D2F02 /* OCVSerializable.h */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		18F87F9320CFD7CD008D2F02 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				18F87F9420CFD7CD008D2F02 /* OCVGeometry+Private.h */,
+				18F87F9520CFD7CD008D2F02 /* OCVInputArray+Private.h */,
+				18F87F9620CFD7CD008D2F02 /* OCVInputOutputArray+Private.h */,
+				18F87F9720CFD7CD008D2F02 /* OCVMatDataAllocator+Private.h */,
+				18F87F9820CFD7CD008D2F02 /* OCVOutputArray+Private.h */,
+				18F87F9920CFD7CD008D2F02 /* OCVPoint+Private.h */,
+				18F87F9A20CFD7CD008D2F02 /* OCVPoint+Private.mm */,
+				18F87F9B20CFD7CD008D2F02 /* OCVRect+Private.h */,
+				18F87F9C20CFD7CD008D2F02 /* OCVRect+Private.mm */,
+				18F87F9D20CFD7CD008D2F02 /* OCVScalar+Private.h */,
+				18F87F9E20CFD7CD008D2F02 /* OCVScalar+Private.mm */,
+				18F87F9F20CFD7CD008D2F02 /* OCVSize+Private.h */,
+				18F87FA020CFD7CD008D2F02 /* OCVSize+Private.mm */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		18F87FA120CFD7CD008D2F02 /* Cuda */ = {
+			isa = PBXGroup;
+			children = (
+				18F87FA220CFD7CD008D2F02 /* OCVGPUMat.h */,
+				18F87FA320CFD7CD008D2F02 /* OCVGPUMat.m */,
+			);
+			path = Cuda;
+			sourceTree = "<group>";
+		};
+		18F87FA420CFD7CD008D2F02 /* Cvb */ = {
+			isa = PBXGroup;
+			children = (
+				18F87FA520CFD7CD008D2F02 /* OCVBlob.h */,
+				18F87FA620CFD7CD008D2F02 /* OCVBlob.m */,
+			);
+			path = Cvb;
+			sourceTree = "<group>";
+		};
+		18F87FA720CFD7CD008D2F02 /* CvEnum */ = {
+			isa = PBXGroup;
+			children = (
+				18F87FA820CFD7CD008D2F02 /* OCVStorageOperationType.h */,
+				18F87FA920CFD7CD008D2F02 /* OCVStorageOperationType.m */,
+			);
+			path = CvEnum;
+			sourceTree = "<group>";
+		};
+		18F87FAA20CFD7CD008D2F02 /* Dnn */ = {
+			isa = PBXGroup;
+			children = (
+				18F87FAB20CFD7CD008D2F02 /* OCVImporter.h */,
+				18F87FAC20CFD7CD008D2F02 /* OCVImporter.m */,
+				18F87FAD20CFD7CD008D2F02 /* OCVNet.h */,
+				18F87FAE20CFD7CD008D2F02 /* OCVNet.m */,
+			);
+			path = Dnn;
+			sourceTree = "<group>";
+		};
+		18F87FAF20CFD7CD008D2F02 /* Face */ = {
+			isa = PBXGroup;
+			children = (
+				18F87FB020CFD7CD008D2F02 /* OCVEigenFaceRecognizer.h */,
+				18F87FB120CFD7CD008D2F02 /* OCVEigenFaceRecognizer.m */,
+				18F87FB220CFD7CD008D2F02 /* OCVFaceRecognizer.h */,
+				18F87FB320CFD7CD008D2F02 /* OCVFaceRecognizer.m */,
+				18F87FB420CFD7CD008D2F02 /* OCVFisherFaceRecognizer.h */,
+				18F87FB520CFD7CD008D2F02 /* OCVFisherFaceRecognizer.m */,
+				18F87FB620CFD7CD008D2F02 /* OCVLBPHFaceRecognizer.h */,
+				18F87FB720CFD7CD008D2F02 /* OCVLBPHFaceRecognizer.m */,
+			);
+			path = Face;
+			sourceTree = "<group>";
+		};
+		18F87FB820CFD7CD008D2F02 /* Features2D */ = {
+			isa = PBXGroup;
+			children = (
+				18F87FB920CFD7CD008D2F02 /* OCVFeature2D.h */,
+				18F87FBA20CFD7CD008D2F02 /* OCVFeature2D.m */,
+			);
+			path = Features2D;
+			sourceTree = "<group>";
+		};
+		18F87FBB20CFD7CD008D2F02 /* Flann */ = {
+			isa = PBXGroup;
+			children = (
+				18F87FBC20CFD7CD008D2F02 /* OCVIndex.h */,
+				18F87FBD20CFD7CD008D2F02 /* OCVIndex.m */,
+			);
+			path = Flann;
+			sourceTree = "<group>";
+		};
+		18F87FBE20CFD7CD008D2F02 /* Fuzzy */ = {
+			isa = PBXGroup;
+			children = (
+				18F87FBF20CFD7CD008D2F02 /* OCVFuzzyInvoke.h */,
+				18F87FC020CFD7CD008D2F02 /* OCVFuzzyInvoke.m */,
+			);
+			path = Fuzzy;
+			sourceTree = "<group>";
+		};
+		18F87FC120CFD7CD008D2F02 /* Geodetic */ = {
+			isa = PBXGroup;
+			children = (
+				18F87FC220CFD7CD008D2F02 /* OCVGeodeticCoordinate.h */,
+				18F87FC320CFD7CD008D2F02 /* OCVGeodeticCoordinate.m */,
+			);
+			path = Geodetic;
+			sourceTree = "<group>";
+		};
+		18F87FC420CFD7CD008D2F02 /* ImageProcessing */ = {
+			isa = PBXGroup;
+			children = (
+				18F87FC520CFD7CD008D2F02 /* OCVColorConversionType.h */,
+				18F87FC620CFD7CD008D2F02 /* OCVContrastLimitedAdaptiveHistogramEqualization.h */,
+				18F87FC720CFD7CD008D2F02 /* OCVContrastLimitedAdaptiveHistogramEqualization.m */,
+				18F87FC820CFD7CD008D2F02 /* OCVGeneralizedHough.h */,
+				18F87FC920CFD7CD008D2F02 /* OCVGeneralizedHough.m */,
+				18F87FCA20CFD7CD008D2F02 /* OCVGeneralizedHoughBallard.h */,
+				18F87FCB20CFD7CD008D2F02 /* OCVGeneralizedHoughBallard.m */,
+				18F87FCC20CFD7CD008D2F02 /* OCVGeneralizedHoughGuil.h */,
+				18F87FCD20CFD7CD008D2F02 /* OCVGeneralizedHoughGuil.m */,
+				18F87FCE20CFD7CD008D2F02 /* OCVImage.h */,
+				18F87FCF20CFD7CD008D2F02 /* OCVImage.m */,
+				18F87FD020CFD7CD008D2F02 /* OCVImageOperation.h */,
+				18F87FD120CFD7CD008D2F02 /* OCVImageOperation.mm */,
+				18F87FD220CFD7CD008D2F02 /* OCVImageProcessing.h */,
+				18F87FD320CFD7CD008D2F02 /* OCVImageTypes.h */,
+				18F87FD420CFD7CD008D2F02 /* OCVInterpolationType.h */,
+				18F87FD520CFD7CD008D2F02 /* OCVLineSegmentDetector.h */,
+				18F87FD620CFD7CD008D2F02 /* OCVLineSegmentDetector.m */,
+				18F87FD720CFD7CD008D2F02 /* OCVSubdiv2D.h */,
+				18F87FD820CFD7CD008D2F02 /* OCVSubdiv2D.m */,
+			);
+			path = ImageProcessing;
+			sourceTree = "<group>";
+		};
+		18F87FD920CFD7CD008D2F02 /* LineDescriptor */ = {
+			isa = PBXGroup;
+			children = (
+				18F87FDA20CFD7CD008D2F02 /* OCVLSDDetector.h */,
+				18F87FDB20CFD7CD008D2F02 /* OCVLSDDetector.m */,
+			);
+			path = LineDescriptor;
+			sourceTree = "<group>";
+		};
+		18F87FDC20CFD7CD008D2F02 /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				18F87FDD20CFD7CD008D2F02 /* Enum */,
+				18F87FE220CFD7CD008D2F02 /* OCVANNMLP.h */,
+				18F87FE320CFD7CD008D2F02 /* OCVANNMLP.m */,
+				18F87FE420CFD7CD008D2F02 /* OCVBoost.h */,
+				18F87FE520CFD7CD008D2F02 /* OCVBoost.m */,
+				18F87FE620CFD7CD008D2F02 /* OCVDTree.h */,
+				18F87FE720CFD7CD008D2F02 /* OCVDTree.m */,
+				18F87FE820CFD7CD008D2F02 /* OCVEM.h */,
+				18F87FE920CFD7CD008D2F02 /* OCVEM.m */,
+				18F87FEA20CFD7CD008D2F02 /* OCVKNearest.h */,
+				18F87FEB20CFD7CD008D2F02 /* OCVKNearest.m */,
+				18F87FEC20CFD7CD008D2F02 /* OCVLogisticRegression.h */,
+				18F87FED20CFD7CD008D2F02 /* OCVLogisticRegression.m */,
+				18F87FEE20CFD7CD008D2F02 /* OCVNormalBayesClassifier.h */,
+				18F87FEF20CFD7CD008D2F02 /* OCVNormalBayesClassifier.m */,
+				18F87FF020CFD7CD008D2F02 /* OCVRTree.h */,
+				18F87FF120CFD7CD008D2F02 /* OCVRTree.m */,
+				18F87FF220CFD7CD008D2F02 /* OCVStatModelExtensions.h */,
+				18F87FF320CFD7CD008D2F02 /* OCVStatModelExtensions.m */,
+				18F87FF420CFD7CD008D2F02 /* OCVSVM.h */,
+				18F87FF520CFD7CD008D2F02 /* OCVSVM.m */,
+				18F87FF620CFD7CD008D2F02 /* OCVTrainData.h */,
+				18F87FF720CFD7CD008D2F02 /* OCVTrainData.m */,
+				18F87FF820CFD7CD008D2F02 /* Structure */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		18F87FDD20CFD7CD008D2F02 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				18F87FDE20CFD7CD008D2F02 /* OCVBoostType.h */,
+				18F87FDF20CFD7CD008D2F02 /* OCVBoostType.m */,
+				18F87FE020CFD7CD008D2F02 /* OCVVarType.h */,
+				18F87FE120CFD7CD008D2F02 /* OCVVarType.m */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		18F87FF820CFD7CD008D2F02 /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				18F87FF920CFD7CD008D2F02 /* OCVMCvDTreeNode.h */,
+				18F87FFA20CFD7CD008D2F02 /* OCVMCvDTreeNode.m */,
+				18F87FFB20CFD7CD008D2F02 /* OCVMCvDTreeSplit.h */,
+				18F87FFC20CFD7CD008D2F02 /* OCVMCvDTreeSplit.m */,
+				18F87FFD20CFD7CD008D2F02 /* OCVMCvDTreeSplitMOrder.h */,
+				18F87FFE20CFD7CD008D2F02 /* OCVMCvDTreeSplitMOrder.m */,
+				18F87FFF20CFD7CD008D2F02 /* OCVMCvParamGrid.h */,
+				18F8800020CFD7CD008D2F02 /* OCVMCvParamGrid.m */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
+		18F8800120CFD7CD008D2F02 /* ObjectDetection */ = {
+			isa = PBXGroup;
+			children = (
+				18F8800220CFD7CD008D2F02 /* OCVBaseCascadeClassifier.h */,
+				18F8800320CFD7CD008D2F02 /* OCVBaseCascadeClassifier.m */,
+				18F8800420CFD7CD008D2F02 /* OCVCascadeClassifier.h */,
+				18F8800520CFD7CD008D2F02 /* OCVCascadeClassifier.mm */,
+				18F8800620CFD7CD008D2F02 /* OCVCascadeClassifierOptions.h */,
+				18F8800720CFD7CD008D2F02 /* OCVCascadeClassifierOptions.m */,
+				18F8800820CFD7CD008D2F02 /* OCVCascadeClassifierResult.h */,
+				18F8800920CFD7CD008D2F02 /* OCVCascadeClassifierResult.m */,
+			);
+			path = ObjectDetection;
+			sourceTree = "<group>";
+		};
+		18F8800A20CFD7CD008D2F02 /* Ocl */ = {
+			isa = PBXGroup;
+			children = (
+				18F8800B20CFD7CD008D2F02 /* OCVDevice.h */,
+				18F8800C20CFD7CD008D2F02 /* OCVDevice.m */,
+				18F8800D20CFD7CD008D2F02 /* OCVImage2D.h */,
+				18F8800E20CFD7CD008D2F02 /* OCVImage2D.m */,
+				18F8800F20CFD7CD008D2F02 /* OCVKernel.h */,
+				18F8801020CFD7CD008D2F02 /* OCVKernel.m */,
+				18F8801120CFD7CD008D2F02 /* OCVKernelConfiguration.h */,
+				18F8801220CFD7CD008D2F02 /* OCVKernelConfiguration.m */,
+				18F8801320CFD7CD008D2F02 /* OCVPlatformInfo.h */,
+				18F8801420CFD7CD008D2F02 /* OCVPlatformInfo.m */,
+				18F8801520CFD7CD008D2F02 /* OCVProgramSource.h */,
+				18F8801620CFD7CD008D2F02 /* OCVProgramSource.m */,
+				18F8801720CFD7CD008D2F02 /* OCVQueue.h */,
+				18F8801820CFD7CD008D2F02 /* OCVQueue.m */,
+			);
+			path = Ocl;
+			sourceTree = "<group>";
+		};
+		18F8801920CFD7CD008D2F02 /* OCR */ = {
+			isa = PBXGroup;
+			children = (
+				18F8801A20CFD7CD008D2F02 /* OCVOrientation.h */,
+				18F8801B20CFD7CD008D2F02 /* OCVOrientation.m */,
+				18F8801C20CFD7CD008D2F02 /* OCVPageIterator.h */,
+				18F8801D20CFD7CD008D2F02 /* OCVPageIterator.m */,
+				18F8801E20CFD7CD008D2F02 /* OCVTesseract.h */,
+				18F8801F20CFD7CD008D2F02 /* OCVTesseract.m */,
+				18F8802020CFD7CD008D2F02 /* OCVTesseractResult.h */,
+				18F8802120CFD7CD008D2F02 /* OCVTesseractResult.m */,
+			);
+			path = OCR;
+			sourceTree = "<group>";
+		};
+		18F8802220CFD7CD008D2F02 /* Plot */ = {
+			isa = PBXGroup;
+			children = (
+				18F8802320CFD7CD008D2F02 /* OCVPlot.h */,
+				18F8802420CFD7CD008D2F02 /* OCVPlot.m */,
+			);
+			path = Plot;
+			sourceTree = "<group>";
+		};
+		18F8802520CFD7CD008D2F02 /* Reflection */ = {
+			isa = PBXGroup;
+			children = (
+				18F8802620CFD7CD008D2F02 /* OCVReflectImage.h */,
+				18F8802720CFD7CD008D2F02 /* OCVReflectImage.m */,
+			);
+			path = Reflection;
+			sourceTree = "<group>";
+		};
+		18F8802820CFD7CD008D2F02 /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				18F8802920CFD7CD008D2F02 /* OCVAffineTransformer.h */,
+				18F8802A20CFD7CD008D2F02 /* OCVAffineTransformer.m */,
+				18F8802B20CFD7CD008D2F02 /* OCVChiHistogramCostExtractor.h */,
+				18F8802C20CFD7CD008D2F02 /* OCVChiHistogramCostExtractor.m */,
+				18F8802D20CFD7CD008D2F02 /* OCVEMDHistogramCostExtractor.h */,
+				18F8802E20CFD7CD008D2F02 /* OCVEMDHistogramCostExtractor.m */,
+				18F8802F20CFD7CD008D2F02 /* OCVEMDL1HistogramCostExtractor.h */,
+				18F8803020CFD7CD008D2F02 /* OCVEMDL1HistogramCostExtractor.m */,
+				18F8803120CFD7CD008D2F02 /* OCVHausdorffDistanceExtractor.h */,
+				18F8803220CFD7CD008D2F02 /* OCVHausdorffDistanceExtractor.m */,
+				18F8803320CFD7CD008D2F02 /* OCVHistogramCostExtractor.h */,
+				18F8803420CFD7CD008D2F02 /* OCVHistogramCostExtractor.m */,
+				18F8803520CFD7CD008D2F02 /* OCVNormHistogramCostExtractor.h */,
+				18F8803620CFD7CD008D2F02 /* OCVNormHistogramCostExtractor.m */,
+				18F8803720CFD7CD008D2F02 /* OCVShapeContextDistanceExtractor.h */,
+				18F8803820CFD7CD008D2F02 /* OCVShapeContextDistanceExtractor.m */,
+				18F8803920CFD7CD008D2F02 /* OCVShapeDistanceExtractor.h */,
+				18F8803A20CFD7CD008D2F02 /* OCVShapeDistanceExtractor.m */,
+				18F8803B20CFD7CD008D2F02 /* OCVThinPlateSplineShapeTransformer.h */,
+				18F8803C20CFD7CD008D2F02 /* OCVThinPlateSplineShapeTransformer.m */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
+		18F8803D20CFD7CD008D2F02 /* Stitching */ = {
+			isa = PBXGroup;
+			children = (
+				18F8803E20CFD7CD008D2F02 /* OCVCompressedRectilinearWarper.h */,
+				18F8803F20CFD7CD008D2F02 /* OCVCompressedRectilinearWarper.m */,
+				18F8804020CFD7CD008D2F02 /* OCVFeaturesFinder.h */,
+				18F8804120CFD7CD008D2F02 /* OCVFeaturesFinder.m */,
+				18F8804220CFD7CD008D2F02 /* OCVFisheyeWarper.h */,
+				18F8804320CFD7CD008D2F02 /* OCVFisheyeWarper.m */,
+				18F8804420CFD7CD008D2F02 /* OCVMercatorWarper.h */,
+				18F8804520CFD7CD008D2F02 /* OCVMercatorWarper.m */,
+				18F8804620CFD7CD008D2F02 /* OCVOrbFeaturesFinder.h */,
+				18F8804720CFD7CD008D2F02 /* OCVOrbFeaturesFinder.m */,
+				18F8804820CFD7CD008D2F02 /* OCVPaniniPortraitWarper.h */,
+				18F8804920CFD7CD008D2F02 /* OCVPaniniPortraitWarper.m */,
+				18F8804A20CFD7CD008D2F02 /* OCVPaniniWarper.h */,
+				18F8804B20CFD7CD008D2F02 /* OCVPaniniWarper.m */,
+				18F8804C20CFD7CD008D2F02 /* OCVPlaneWarper.h */,
+				18F8804D20CFD7CD008D2F02 /* OCVPlaneWarper.m */,
+				18F8804E20CFD7CD008D2F02 /* OCVSphericalWarper.h */,
+				18F8804F20CFD7CD008D2F02 /* OCVSphericalWarper.m */,
+				18F8805020CFD7CD008D2F02 /* OCVStereographicWarper.h */,
+				18F8805120CFD7CD008D2F02 /* OCVStereographicWarper.m */,
+				18F8805220CFD7CD008D2F02 /* OCVSticher.h */,
+				18F8805320CFD7CD008D2F02 /* OCVSticher.m */,
+				18F8805420CFD7CD008D2F02 /* OCVTransverseMercatorWarper.h */,
+				18F8805520CFD7CD008D2F02 /* OCVTransverseMercatorWarper.m */,
+				18F8805620CFD7CD008D2F02 /* OCVWarperCreator.h */,
+				18F8805720CFD7CD008D2F02 /* OCVWarperCreator.m */,
+			);
+			path = Stitching;
+			sourceTree = "<group>";
+		};
+		18F8805820CFD7CD008D2F02 /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				18F8805920CFD7CD008D2F02 /* OCVRgb.h */,
+				18F8805A20CFD7CD008D2F02 /* OCVRgb.m */,
+				18F8805B20CFD7CD008D2F02 /* OCVRgba.h */,
+				18F8805C20CFD7CD008D2F02 /* OCVRgba.m */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
+		18F8805D20CFD7CD008D2F02 /* Superres */ = {
+			isa = PBXGroup;
+			children = (
+				18F8805E20CFD7CD008D2F02 /* OCVFrameSource.h */,
+				18F8805F20CFD7CD008D2F02 /* OCVFrameSource.m */,
+				18F8806020CFD7CD008D2F02 /* OCVSuperResolution.h */,
+				18F8806120CFD7CD008D2F02 /* OCVSuperResolution.m */,
+			);
+			path = Superres;
+			sourceTree = "<group>";
+		};
+		18F8806220CFD7CD008D2F02 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				18F8806320CFD7CD008D2F02 /* OCVERFilter.h */,
+				18F8806420CFD7CD008D2F02 /* OCVERFilter.m */,
+				18F8806520CFD7CD008D2F02 /* OCVERFilterNM1.h */,
+				18F8806620CFD7CD008D2F02 /* OCVERFilterNM1.m */,
+				18F8806720CFD7CD008D2F02 /* OCVERFilterNM2.h */,
+				18F8806820CFD7CD008D2F02 /* OCVERFilterNM2.m */,
+				18F8806920CFD7CD008D2F02 /* OCVERStat.h */,
+				18F8806A20CFD7CD008D2F02 /* OCVERStat.m */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		18F8806B20CFD7CD008D2F02 /* Tiff */ = {
+			isa = PBXGroup;
+			children = (
+				18F8806C20CFD7CD008D2F02 /* OCVTiffWriter.h */,
+				18F8806D20CFD7CD008D2F02 /* OCVTiffWriter.m */,
+				18F8806E20CFD7CD008D2F02 /* OCVTileTiffWriter.h */,
+				18F8806F20CFD7CD008D2F02 /* OCVTileTiffWriter.m */,
+			);
+			path = Tiff;
+			sourceTree = "<group>";
+		};
+		18F8807020CFD7CD008D2F02 /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				18F8807120CFD7CD008D2F02 /* OCVMultiTracker.h */,
+				18F8807220CFD7CD008D2F02 /* OCVMultiTracker.m */,
+				18F8807320CFD7CD008D2F02 /* OCVTracker.h */,
+				18F8807420CFD7CD008D2F02 /* OCVTracker.m */,
+			);
+			path = Tracking;
+			sourceTree = "<group>";
+		};
+		18F8807520CFD7CD008D2F02 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				18F8807620CFD7CD008D2F02 /* OCVHistogramBox.h */,
+				18F8807720CFD7CD008D2F02 /* OCVHistogramBox.m */,
+				18F8807820CFD7CD008D2F02 /* OCVHistogramViewer.h */,
+				18F8807920CFD7CD008D2F02 /* OCVHistogramViewer.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		18F8807A20CFD7CD008D2F02 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				18F8807B20CFD7CD008D2F02 /* OCVObject.h */,
+				18F8807C20CFD7CD008D2F02 /* OCVObject.m */,
+				18F8807D20CFD7CD008D2F02 /* OCVPointerObject.h */,
+				18F8807E20CFD7CD008D2F02 /* OCVPointerObject.m */,
+				18F8807F20CFD7CD008D2F02 /* OCVReferenceObject.h */,
+				18F8808020CFD7CD008D2F02 /* OCVReferenceObject.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		18F8808120CFD7CD008D2F02 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				18F8808220CFD7CD008D2F02 /* OCVCamera+Private.h */,
+				18F8808320CFD7CD008D2F02 /* OCVCamera.h */,
+				18F8808420CFD7CD008D2F02 /* OCVCamera.mm */,
+				18F8808520CFD7CD008D2F02 /* OCVPhotoCamera.h */,
+				18F8808620CFD7CD008D2F02 /* OCVPhotoCamera.mm */,
+				18F8808720CFD7CD008D2F02 /* OCVVideo.h */,
+				18F8808820CFD7CD008D2F02 /* OCVVideoCamera.h */,
+				18F8808920CFD7CD008D2F02 /* OCVVideoCamera.mm */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		18F8808A20CFD7CD008D2F02 /* VideoStab */ = {
+			isa = PBXGroup;
+			children = (
+				18F8808B20CFD7CD008D2F02 /* OCVGaussianMotionFilter.h */,
+				18F8808C20CFD7CD008D2F02 /* OCVGaussianMotionFilter.m */,
+				18F8808D20CFD7CD008D2F02 /* OCVOnePassStabilizer.h */,
+				18F8808E20CFD7CD008D2F02 /* OCVOnePassStabilizer.m */,
+				18F8808F20CFD7CD008D2F02 /* OCVTwoPassStabilizer.h */,
+				18F8809020CFD7CD008D2F02 /* OCVTwoPassStabilizer.m */,
+				18F8809120CFD7CD008D2F02 /* OCVVideoCaptureFrameSource.h */,
+				18F8809220CFD7CD008D2F02 /* OCVVideoCaptureFrameSource.m */,
+				18F8809320CFD7CD008D2F02 /* OCVVideoFrameSource.h */,
+				18F8809420CFD7CD008D2F02 /* OCVVideoFrameSource.m */,
+			);
+			path = VideoStab;
+			sourceTree = "<group>";
+		};
+		18F8809520CFD7CD008D2F02 /* VideoSurveillance */ = {
+			isa = PBXGroup;
+			children = (
+				18F8809620CFD7CD008D2F02 /* OCVBackgroundSubtractor.h */,
+				18F8809720CFD7CD008D2F02 /* OCVBackgroundSubtractor.m */,
+				18F8809820CFD7CD008D2F02 /* OCVBackgroundSubtractorKNN.h */,
+				18F8809920CFD7CD008D2F02 /* OCVBackgroundSubtractorKNN.m */,
+				18F8809A20CFD7CD008D2F02 /* OCVBackgroundSubtractorMOG2.h */,
+				18F8809B20CFD7CD008D2F02 /* OCVBackgroundSubtractorMOG2.m */,
+			);
+			path = VideoSurveillance;
+			sourceTree = "<group>";
+		};
+		18F8809C20CFD7CD008D2F02 /* XFeatures2D */ = {
+			isa = PBXGroup;
+			children = (
+				18F8809D20CFD7CD008D2F02 /* OCVBriefDescriptorExtractor.h */,
+				18F8809E20CFD7CD008D2F02 /* OCVBriefDescriptorExtractor.m */,
+				18F8809F20CFD7CD008D2F02 /* OCVCudaSURF.h */,
+				18F880A020CFD7CD008D2F02 /* OCVCudaSURF.m */,
+				18F880A120CFD7CD008D2F02 /* OCVDAISY.h */,
+				18F880A220CFD7CD008D2F02 /* OCVDAISY.m */,
+				18F880A320CFD7CD008D2F02 /* OCVFreak.h */,
+				18F880A420CFD7CD008D2F02 /* OCVFreak.m */,
+				18F880A520CFD7CD008D2F02 /* OCVLATCH.h */,
+				18F880A620CFD7CD008D2F02 /* OCVLATCH.m */,
+				18F880A720CFD7CD008D2F02 /* OCVLUCID.h */,
+				18F880A820CFD7CD008D2F02 /* OCVLUCID.m */,
+				18F880A920CFD7CD008D2F02 /* OCVSIFT.h */,
+				18F880AA20CFD7CD008D2F02 /* OCVSIFT.m */,
+				18F880AB20CFD7CD008D2F02 /* OCVStarDetector.h */,
+				18F880AC20CFD7CD008D2F02 /* OCVStarDetector.m */,
+				18F880AD20CFD7CD008D2F02 /* OCVSURF.h */,
+				18F880AE20CFD7CD008D2F02 /* OCVSURF.m */,
+			);
+			path = XFeatures2D;
+			sourceTree = "<group>";
+		};
+		18F880AF20CFD7CD008D2F02 /* XImgproc */ = {
+			isa = PBXGroup;
+			children = (
+				18F880B020CFD7CD008D2F02 /* OCVDTFilter.h */,
+				18F880B120CFD7CD008D2F02 /* OCVDTFilter.m */,
+			);
+			path = XImgproc;
+			sourceTree = "<group>";
+		};
+		18F880B220CFD7CD008D2F02 /* XPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				18F880B320CFD7CD008D2F02 /* OCVXPhoto.h */,
+				18F880B420CFD7CD008D2F02 /* OCVXPhoto.m */,
+			);
+			path = XPhoto;
+			sourceTree = "<group>";
+		};
+		2D918CAA7A0E2ECB72A7B913 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A14E247D237A1FE2597CE80 /* Pods_Project_openCV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9239F33F97894783ABAA938E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				946D8E381EDD20F19FDC72C2 /* Pods-Project_openCV.debug.xcconfig */,
+				C0D85F7BC1912BDBF66030FA /* Pods-Project_openCV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		185FCAFC20CE9C5000DD8A07 /* Project_openCV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185FCB0F20CE9C5100DD8A07 /* Build configuration list for PBXNativeTarget "Project_openCV" */;
+			buildPhases = (
+				B7E99B42D1261793F8A2F4C2 /* [CP] Check Pods Manifest.lock */,
+				185FCAF920CE9C5000DD8A07 /* Sources */,
+				185FCAFA20CE9C5000DD8A07 /* Frameworks */,
+				185FCAFB20CE9C5000DD8A07 /* Resources */,
+				18F87D3320CFD74A008D2F02 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Project_openCV;
+			productName = Project_openCV;
+			productReference = 185FCAFD20CE9C5000DD8A07 /* Project_openCV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		185FCAF520CE9C5000DD8A07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Smartivity;
+				TargetAttributes = {
+					185FCAFC20CE9C5000DD8A07 = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
+					};
+				};
+			};
+			buildConfigurationList = 185FCAF820CE9C5000DD8A07 /* Build configuration list for PBXProject "Project_openCV" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 185FCAF420CE9C5000DD8A07;
+			productRefGroup = 185FCAFE20CE9C5000DD8A07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				185FCAFC20CE9C5000DD8A07 /* Project_openCV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		185FCAFB20CE9C5000DD8A07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185FCB0B20CE9C5100DD8A07 /* LaunchScreen.storyboard in Resources */,
+				185FCB0820CE9C5100DD8A07 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B7E99B42D1261793F8A2F4C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project_openCV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		185FCAF920CE9C5000DD8A07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F8811F20CFD7CD008D2F02 /* OCVSphericalWarper.m in Sources */,
+				18F8810E20CFD7CD008D2F02 /* OCVChiHistogramCostExtractor.m in Sources */,
+				18F8811220CFD7CD008D2F02 /* OCVHistogramCostExtractor.m in Sources */,
+				18F880B820CFD7CD008D2F02 /* OCVLDA.mm in Sources */,
+				18F880BD20CFD7CD008D2F02 /* OCVComplex.m in Sources */,
+				18F8811A20CFD7CD008D2F02 /* OCVMercatorWarper.m in Sources */,
+				18F880FA20CFD7CD008D2F02 /* OCVMCvDTreeSplitMOrder.m in Sources */,
+				18F8813820CFD7CD008D2F02 /* OCVGaussianMotionFilter.m in Sources */,
+				18F8812820CFD7CD008D2F02 /* OCVERFilter.m in Sources */,
+				18F880F820CFD7CD008D2F02 /* OCVMCvDTreeNode.m in Sources */,
+				18F8812020CFD7CD008D2F02 /* OCVStereographicWarper.m in Sources */,
+				18F8814420CFD7CE008D2F02 /* OCVLATCH.m in Sources */,
+				18F8811120CFD7CD008D2F02 /* OCVHausdorffDistanceExtractor.m in Sources */,
+				18F880E420CFD7CD008D2F02 /* OCVGeneralizedHoughBallard.m in Sources */,
+				18F880C920CFD7CD008D2F02 /* OCVMinimumMaximum.m in Sources */,
+				18F8810620CFD7CD008D2F02 /* OCVQueue.m in Sources */,
+				18F8812720CFD7CD008D2F02 /* OCVSuperResolution.m in Sources */,
+				18F880D620CFD7CD008D2F02 /* OCVBlob.m in Sources */,
+				18F8812D20CFD7CD008D2F02 /* OCVTileTiffWriter.m in Sources */,
+				18F880D420CFD7CD008D2F02 /* OCVSize+Private.mm in Sources */,
+				18F880EB20CFD7CD008D2F02 /* OCVBoostType.m in Sources */,
+				18F880CB20CFD7CD008D2F02 /* OCVOperation+Transform.mm in Sources */,
+				18F8812320CFD7CD008D2F02 /* OCVWarperCreator.m in Sources */,
+				18F8813F20CFD7CE008D2F02 /* OCVBackgroundSubtractorMOG2.m in Sources */,
+				18F8814220CFD7CE008D2F02 /* OCVDAISY.m in Sources */,
+				18F880E720CFD7CD008D2F02 /* OCVImageOperation.mm in Sources */,
+				18F880CE20CFD7CD008D2F02 /* OCVFileNode.mm in Sources */,
+				18F880F520CFD7CD008D2F02 /* OCVStatModelExtensions.m in Sources */,
+				18F8812F20CFD7CD008D2F02 /* OCVTracker.m in Sources */,
+				18F8811720CFD7CD008D2F02 /* OCVCompressedRectilinearWarper.m in Sources */,
+				18F880CC20CFD7CD008D2F02 /* OCVOperation.mm in Sources */,
+				18F880C020CFD7CD008D2F02 /* OCVInputOutputArray.mm in Sources */,
+				18F880F620CFD7CD008D2F02 /* OCVSVM.m in Sources */,
+				18F8812B20CFD7CD008D2F02 /* OCVERStat.m in Sources */,
+				18F8811820CFD7CD008D2F02 /* OCVFeaturesFinder.m in Sources */,
+				18F8812520CFD7CD008D2F02 /* OCVRgba.m in Sources */,
+				18F8813320CFD7CD008D2F02 /* OCVPointerObject.m in Sources */,
+				18F8810320CFD7CD008D2F02 /* OCVKernelConfiguration.m in Sources */,
+				18F880D120CFD7CD008D2F02 /* OCVPoint+Private.mm in Sources */,
+				18F8810820CFD7CD008D2F02 /* OCVPageIterator.m in Sources */,
+				18F8814120CFD7CE008D2F02 /* OCVCudaSURF.m in Sources */,
+				18F8814720CFD7CE008D2F02 /* OCVStarDetector.m in Sources */,
+				18F880CF20CFD7CD008D2F02 /* OCVFileStorage.mm in Sources */,
+				18F8812E20CFD7CD008D2F02 /* OCVMultiTracker.m in Sources */,
+				18F8810020CFD7CD008D2F02 /* OCVDevice.m in Sources */,
+				18F880E320CFD7CD008D2F02 /* OCVGeneralizedHough.m in Sources */,
+				18F880C820CFD7CD008D2F02 /* OCVUMat.m in Sources */,
+				18F880C520CFD7CD008D2F02 /* OCVMat.mm in Sources */,
+				18F8812620CFD7CD008D2F02 /* OCVFrameSource.m in Sources */,
+				18F8812920CFD7CD008D2F02 /* OCVERFilterNM1.m in Sources */,
+				18F880EA20CFD7CD008D2F02 /* OCVLSDDetector.m in Sources */,
+				18F8813420CFD7CD008D2F02 /* OCVReferenceObject.m in Sources */,
+				18F880E820CFD7CD008D2F02 /* OCVLineSegmentDetector.m in Sources */,
+				18F880C420CFD7CD008D2F02 /* OCVVector.m in Sources */,
+				185FCB0320CE9C5000DD8A07 /* ViewController.swift in Sources */,
+				18F880FF20CFD7CD008D2F02 /* OCVCascadeClassifierResult.m in Sources */,
+				18F880D020CFD7CD008D2F02 /* OCVFileStorageFormatDescriptor.m in Sources */,
+				18F880DB20CFD7CD008D2F02 /* OCVFaceRecognizer.m in Sources */,
+				18F880C320CFD7CD008D2F02 /* OCVScalar.m in Sources */,
+				18F880C620CFD7CD008D2F02 /* OCVMatDataAllocator.mm in Sources */,
+				18F880DE20CFD7CD008D2F02 /* OCVFeature2D.m in Sources */,
+				18F880D820CFD7CD008D2F02 /* OCVImporter.m in Sources */,
+				18F880E020CFD7CD008D2F02 /* OCVFuzzyInvoke.m in Sources */,
+				18F8810F20CFD7CD008D2F02 /* OCVEMDHistogramCostExtractor.m in Sources */,
+				18F880B920CFD7CD008D2F02 /* OCVPCA.mm in Sources */,
+				18F8813020CFD7CD008D2F02 /* OCVHistogramBox.m in Sources */,
+				18F880DD20CFD7CD008D2F02 /* OCVLBPHFaceRecognizer.m in Sources */,
+				18F8810B20CFD7CD008D2F02 /* OCVPlot.m in Sources */,
+				18F8810420CFD7CD008D2F02 /* OCVPlatformInfo.m in Sources */,
+				18F880C120CFD7CD008D2F02 /* OCVOutputArray.mm in Sources */,
+				18F880BB20CFD7CD008D2F02 /* OCVSVD.mm in Sources */,
+				18F880E620CFD7CD008D2F02 /* OCVImage.m in Sources */,
+				18F8814A20CFD7CE008D2F02 /* OCVXPhoto.m in Sources */,
+				18F8810920CFD7CD008D2F02 /* OCVTesseract.m in Sources */,
+				18F880BE20CFD7CD008D2F02 /* OCVFormatter.m in Sources */,
+				18F8810120CFD7CD008D2F02 /* OCVImage2D.m in Sources */,
+				18F880EC20CFD7CD008D2F02 /* OCVVarType.m in Sources */,
+				18F880D320CFD7CD008D2F02 /* OCVScalar+Private.mm in Sources */,
+				18F8813920CFD7CD008D2F02 /* OCVOnePassStabilizer.m in Sources */,
+				18F8811D20CFD7CD008D2F02 /* OCVPaniniWarper.m in Sources */,
+				18F8810520CFD7CD008D2F02 /* OCVProgramSource.m in Sources */,
+				18F8813B20CFD7CD008D2F02 /* OCVVideoCaptureFrameSource.m in Sources */,
+				18F880F320CFD7CD008D2F02 /* OCVNormalBayesClassifier.m in Sources */,
+				18F880EE20CFD7CD008D2F02 /* OCVBoost.m in Sources */,
+				18F8811C20CFD7CD008D2F02 /* OCVPaniniPortraitWarper.m in Sources */,
+				18F880B720CFD7CD008D2F02 /* OCVBackgroundSubtractorMOG.m in Sources */,
+				18F8810A20CFD7CD008D2F02 /* OCVTesseractResult.m in Sources */,
+				185FCB0120CE9C5000DD8A07 /* AppDelegate.swift in Sources */,
+				18F880D720CFD7CD008D2F02 /* OCVStorageOperationType.m in Sources */,
+				18F8811020CFD7CD008D2F02 /* OCVEMDL1HistogramCostExtractor.m in Sources */,
+				18F880FE20CFD7CD008D2F02 /* OCVCascadeClassifierOptions.m in Sources */,
+				18F880D220CFD7CD008D2F02 /* OCVRect+Private.mm in Sources */,
+				18F880DF20CFD7CD008D2F02 /* OCVIndex.m in Sources */,
+				18F880C220CFD7CD008D2F02 /* OCVRect.m in Sources */,
+				18F8814320CFD7CE008D2F02 /* OCVFreak.m in Sources */,
+				18F880BC20CFD7CD008D2F02 /* OCVAlgorithm.m in Sources */,
+				18F8813D20CFD7CE008D2F02 /* OCVBackgroundSubtractor.m in Sources */,
+				18F880CA20CFD7CD008D2F02 /* OCVOperation+Bitwise.mm in Sources */,
+				18F8811620CFD7CD008D2F02 /* OCVThinPlateSplineShapeTransformer.m in Sources */,
+				18F8812420CFD7CD008D2F02 /* OCVRgb.m in Sources */,
+				18F8810720CFD7CD008D2F02 /* OCVOrientation.m in Sources */,
+				18F880ED20CFD7CD008D2F02 /* OCVANNMLP.m in Sources */,
+				18F880FB20CFD7CD008D2F02 /* OCVMCvParamGrid.m in Sources */,
+				18F8812A20CFD7CD008D2F02 /* OCVERFilterNM2.m in Sources */,
+				18F8814620CFD7CE008D2F02 /* OCVSIFT.m in Sources */,
+				18F880E520CFD7CD008D2F02 /* OCVGeneralizedHoughGuil.m in Sources */,
+				18F8814020CFD7CE008D2F02 /* OCVBriefDescriptorExtractor.m in Sources */,
+				18F8813120CFD7CD008D2F02 /* OCVHistogramViewer.m in Sources */,
+				18F8814520CFD7CE008D2F02 /* OCVLUCID.m in Sources */,
+				18F8811920CFD7CD008D2F02 /* OCVFisheyeWarper.m in Sources */,
+				18F880BA20CFD7CD008D2F02 /* OCVRandomGenerator.mm in Sources */,
+				18F880F420CFD7CD008D2F02 /* OCVRTree.m in Sources */,
+				18F880D520CFD7CD008D2F02 /* OCVGPUMat.m in Sources */,
+				18F8811420CFD7CD008D2F02 /* OCVShapeContextDistanceExtractor.m in Sources */,
+				18F8812120CFD7CD008D2F02 /* OCVSticher.m in Sources */,
+				18F8814820CFD7CE008D2F02 /* OCVSURF.m in Sources */,
+				18F8812C20CFD7CD008D2F02 /* OCVTiffWriter.m in Sources */,
+				18F8813C20CFD7CD008D2F02 /* OCVVideoFrameSource.m in Sources */,
+				18F880E120CFD7CD008D2F02 /* OCVGeodeticCoordinate.m in Sources */,
+				18F8813220CFD7CD008D2F02 /* OCVObject.m in Sources */,
+				18F8813620CFD7CD008D2F02 /* OCVPhotoCamera.mm in Sources */,
+				18F880CD20CFD7CD008D2F02 /* OCVTermCriteria.m in Sources */,
+				18F880E920CFD7CD008D2F02 /* OCVSubdiv2D.m in Sources */,
+				18F8810220CFD7CD008D2F02 /* OCVKernel.m in Sources */,
+				18F880EF20CFD7CD008D2F02 /* OCVDTree.m in Sources */,
+				18F880F920CFD7CD008D2F02 /* OCVMCvDTreeSplit.m in Sources */,
+				18F8813520CFD7CD008D2F02 /* OCVCamera.mm in Sources */,
+				18F8812220CFD7CD008D2F02 /* OCVTransverseMercatorWarper.m in Sources */,
+				18F880DA20CFD7CD008D2F02 /* OCVEigenFaceRecognizer.m in Sources */,
+				18F880C720CFD7CD008D2F02 /* OCVMatExpr.mm in Sources */,
+				18F880D920CFD7CD008D2F02 /* OCVNet.m in Sources */,
+				18F8811320CFD7CD008D2F02 /* OCVNormHistogramCostExtractor.m in Sources */,
+				18F880DC20CFD7CD008D2F02 /* OCVFisherFaceRecognizer.m in Sources */,
+				18F8811B20CFD7CD008D2F02 /* OCVOrbFeaturesFinder.m in Sources */,
+				18F880F220CFD7CD008D2F02 /* OCVLogisticRegression.m in Sources */,
+				18F8814920CFD7CE008D2F02 /* OCVDTFilter.m in Sources */,
+				18F880E220CFD7CD008D2F02 /* OCVContrastLimitedAdaptiveHistogramEqualization.m in Sources */,
+				18F880FD20CFD7CD008D2F02 /* OCVCascadeClassifier.mm in Sources */,
+				18F8813A20CFD7CD008D2F02 /* OCVTwoPassStabilizer.m in Sources */,
+				18F8813720CFD7CD008D2F02 /* OCVVideoCamera.mm in Sources */,
+				18F8811520CFD7CD008D2F02 /* OCVShapeDistanceExtractor.m in Sources */,
+				18F880F120CFD7CD008D2F02 /* OCVKNearest.m in Sources */,
+				18F880F720CFD7CD008D2F02 /* OCVTrainData.m in Sources */,
+				18F8813E20CFD7CE008D2F02 /* OCVBackgroundSubtractorKNN.m in Sources */,
+				18F880FC20CFD7CD008D2F02 /* OCVBaseCascadeClassifier.m in Sources */,
+				18F880BF20CFD7CD008D2F02 /* OCVInputArray.mm in Sources */,
+				18F880B520CFD7CD008D2F02 /* OCVCharucoBoard.m in Sources */,
+				18F880F020CFD7CD008D2F02 /* OCVEM.m in Sources */,
+				18F8811E20CFD7CD008D2F02 /* OCVPlaneWarper.m in Sources */,
+				18F8810C20CFD7CD008D2F02 /* OCVReflectImage.m in Sources */,
+				18F880B620CFD7CD008D2F02 /* OCVBackgroundSubtractorGMG.m in Sources */,
+				18F8810D20CFD7CD008D2F02 /* OCVAffineTransformer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		185FCB0920CE9C5100DD8A07 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				185FCB0A20CE9C5100DD8A07 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		185FCB0D20CE9C5100DD8A07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		185FCB0E20CE9C5100DD8A07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		185FCB1020CE9C5100DD8A07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 946D8E381EDD20F19FDC72C2 /* Pods-Project_openCV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6998RP55G;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Project_openCV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Smartivity.Project-openCV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Project_openCV-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		185FCB1120CE9C5100DD8A07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0D85F7BC1912BDBF66030FA /* Pods-Project_openCV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6998RP55G;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Project_openCV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Smartivity.Project-openCV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Project_openCV-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		185FCAF820CE9C5000DD8A07 /* Build configuration list for PBXProject "Project_openCV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185FCB0D20CE9C5100DD8A07 /* Debug */,
+				185FCB0E20CE9C5100DD8A07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		185FCB0F20CE9C5100DD8A07 /* Build configuration list for PBXNativeTarget "Project_openCV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185FCB1020CE9C5100DD8A07 /* Debug */,
+				185FCB1120CE9C5100DD8A07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 185FCAF520CE9C5000DD8A07 /* Project object */;
+}

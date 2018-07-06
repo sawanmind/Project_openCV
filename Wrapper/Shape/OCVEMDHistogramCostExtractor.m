@@ -1,0 +1,13 @@
+//
+//  OCVEMDHistogramCostExtractor.m
+
+//
+//  Created by sawanmind on 18/01/2017.
+//  Copyright © 2018 Genisys. All rights reserved.
+//
+
+#import "OCVEMDHistogramCostExtractor.h"
+
+@implementation OCVEMDHistogramCostExtractor
+
+@end
